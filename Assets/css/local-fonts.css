@@ -137,6 +137,18 @@ body {
     text-transform: uppercase;
 }
 
+.kabel-title_7 {
+    font-family: var(--page-heading-font);
+    font-size: clamp(1.125rem, 0.9649rem + 0.3339vw, 1.25rem);
+    font-weight: 400;
+
+}
+
+.kabel-title_6 {
+    font-family: var(--page-heading-font);
+    font-size: clamp(1.25rem, 0.9299rem + 0.6678vw, 1.5rem);
+    font-weight: 500;
+}
 
 .title_1,
 .title_2,

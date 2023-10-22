@@ -588,8 +588,10 @@
 
 /* Mitmachen > Street Shops Section */
 .all-card-style .card {
-  border: 7px solid #000;
+  border: 6px solid var(--dark-blue-100);
   border-radius: 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  z-index: -1;
 }
 
 .all-card-style .card .card-header {
@@ -614,6 +616,17 @@
   color: var(--ash-light);
   font-size: 0.8rem;
 }
+
+#removeMarginButton-collapse {
+  background-color: var(--white);
+  margin-top: -10%;
+  height: 150px;
+}
+
+/* End > Mitmachen Vorshlage einreichn Page */
+
+
+
 
 /*------ ======================================= MITMACHEN VOTING PAGE ========================================== -- */
 /* MITMACHEN > All Button */
