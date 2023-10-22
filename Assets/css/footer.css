@@ -1,0 +1,240 @@
+footer {
+    width: 100%;
+    height: auto;
+}
+
+footer .content-wrapper {
+    background-color: #fff;
+    padding: 120px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.footer-top .footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+
+.footer-top .footer-logo a {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    line-height: 1em;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.footer-top .footer-logo a span {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+.footer-top .social-icons a {
+    font-size: 2.2rem;
+    padding: 2px;
+    margin: 5px;
+    color: var(--primary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-top .social-icons a:hover {
+    color: var(--secondary-color);
+}
+
+
+
+/* Menu 1 and 2 */
+.footer-top .footer-menu {
+    padding: 5px 0;
+    margin: 5px 0;
+}
+
+.footer-top .footer-menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-top .footer-menu li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1em;
+    font-weight: 500;
+    padding: 10px 20px;
+    color: var(--primary-color);
+}
+
+.footer-top #f-menu-1 li a,
+.footer-top #f-menu-2 li a {
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+.footer-top #f-menu-1 li a:hover,
+.footer-top #f-menu-2 li a:hover {
+    color: #fff;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+
+
+/* Menu 3 */
+.footer-top #f-menu-3 ul {
+    margin-top: 20px;
+    display: inline-flex;
+}
+
+.footer-top #f-menu-3 li {
+    line-height: 1em;
+    padding: 0 10px;
+    border-right: 1px solid var(--primary-color);
+}
+
+.footer-top #f-menu-3 li:last-child {
+    border: none;
+}
+
+.footer-top #f-menu-3 li a {
+    font-size: 0.85rem;
+    line-height: 0.85em;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+.footer-top #f-menu-3 li a:hover  {
+    transition: all 0.3s ease-in-out;
+    color: var(--secondary-color);
+}
+
+
+
+
+/* footer-bottom */
+.footer-bottom {
+    padding: 80px 20px 100px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .f-bottom-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .f-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .f-logos span {
+    padding: 0;
+    margin: 0;
+    font-size: 0.75rem;
+    line-height: 1.2em;
+    color: var(--text-ash-color);
+  }
+
+
+  .footer-bottom .f-text  {
+    width: 80%;
+  }
+
+  .footer-bottom .f-text p {
+    padding: 5px;
+    margin: 0;
+    text-align: center;
+    font-size: 0.65rem;
+    line-height: 1.5em;
+    color: var(--text-ash-color);
+  }
+
+
+
+
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+
+  }
+  
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (max-width: 992px) {
+
+  }
+  
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (max-width: 768px) {
+
+    .footer-top {
+        gap: 10px;
+    }
+
+
+    .footer-top .footer-menu ul {
+        justify-content: center;
+        gap: 30px;
+    }
+
+  }
+  
+  
+  /* Small devices  (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+
+    /* #f-menu-1 #m-list-1,
+    #f-menu-1 #m-list-2 {
+        width: 45%;
+    }
+
+    #f-menu-2 #m-list-4,
+    #f-menu-2 #m-list-6 {
+        width: 80%;
+    } */
+
+    .footer-bottom .f-text {
+        width: 100%;
+    }
+
+  }
+  
+
+
+  

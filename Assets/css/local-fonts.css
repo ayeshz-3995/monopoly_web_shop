@@ -1,0 +1,214 @@
+/* poppins - Thin 100 */
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins/Poppins-Thin.ttf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* poppins - ExtraLight 200 */
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins/Poppins-ExtraLight.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+}
+
+/* poppins - Light 300 */
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins/Poppins-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* poppins - Regular 400 */
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* poppins - Medium 500 */
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* poppins - SemiBold 600 */
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* poppins - Bold 700 */
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* poppins - ExtraBold 800 */
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins/Poppins-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* poppins - Black 900 */
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins/Poppins-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+/* ////////////////////////////////////    KABEL FONT     //////////////////////////////// */
+@font-face {
+    font-family: "Kabel";
+    src: url("../fonts/Kabel/Kabel-Xlight.otf") format("opentype");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Kabel";
+    src: url("../fonts/Kabel/Kabel-Light.otf") format("opentype");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Kabel";
+    src: url("../fonts/Kabel/Kabel-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Kabel";
+    src: url("../fonts/Kabel/Kabel-Medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Kabel";
+    src: url("../fonts/Kabel/Kabel-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Kabel";
+    src: url("../fonts/Kabel/Kabel-Black.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+
+
+/* ======================== */
+
+:root {
+    --body-font: "Poppins", sans-serif;
+    --title-font: "Poppins", sans-serif;
+    --page-heading-font: "kabel", sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--ash-color);
+}
+
+.page-heading-title {
+    font-family: var(--page-heading-font);
+    font-size: clamp(2.75rem, 1.1494rem + 3.3389vw, 4rem);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+.title_1,
+.title_2,
+.title_3,
+.title_4,
+.title_5,
+.title_6,
+.title_7 {
+    font-family: var(--title-font);
+}
+
+.title_1 {
+    font-size: clamp(2.75rem, 1.1494rem + 3.3389vw, 4rem);
+    font-weight: 800;
+}
+
+.title_2 {
+    font-size: clamp(2.25rem, 1.2896rem + 2.0033vw, 3rem);
+    font-weight: 700;
+}
+
+.title_3 {
+    font-size: clamp(1.875rem, 1.0747rem + 1.6694vw, 2.5rem);
+    font-weight: 600;
+}
+
+.title_4 {
+    font-size: clamp(1.625rem, 1.1448rem + 1.0017vw, 2rem);
+    font-weight: 600;
+}
+
+.title_5 {
+    font-size: clamp(1.375rem, 0.8948rem + 1.0017vw, 1.75rem);
+    font-weight: 500;
+}
+
+.title_6 {
+    font-size: clamp(1.25rem, 0.9299rem + 0.6678vw, 1.5rem);
+    font-weight: 500;
+}
+
+.title_7 {
+    font-size: clamp(1.125rem, 0.9649rem + 0.3339vw, 1.25rem);
+    font-weight: 500;
+}
+
+.sub_headings {
+    font-size: clamp(1.0625rem, 0.9825rem + 0.1669vw, 1.125rem);
+    font-weight: 500;
+}
+
+
+.body_text_larg,
+.body_text,
+.body_text_small,
+.body_text_extra_small {
+    font-family: var(--body-font);
+}
+
+.body_text_larg {
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+
+.body_text {
+    font-size: 0.98rem;
+}
+
+.body_text_small {
+    font-size: 0.875rem;
+}
+
+.body_text_extra_small {
+    font-size: 0.68rem;
+}

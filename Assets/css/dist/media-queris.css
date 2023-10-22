@@ -1,0 +1,212 @@
+/* ========================== Large Devices ================================= */
+@media (min-width: 992px) {
+  /******* SLIDER *************/
+  #video-corousel .bg-video-wrap .container .row .content {
+    position: absolute;
+    text-align: left;
+    top: 50%;
+    left: 10%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    z-index: 3;
+  }
+  #video-corousel .bg-video-wrap .container .row .content h1 {
+    margin-bottom: 15px;
+    font-size: 4rem;
+    line-height: 4.2rem;
+    font-weight: 800;
+  }
+  #video-corousel .bg-video-wrap .container .row .content h6 {
+    margin-bottom: 15px;
+  }
+  #video-corousel .bg-video-wrap .container .row .content a {
+    text-decoration: none;
+  }
+  #video-corousel .bg-video-wrap .container .row .content-2 {
+    position: absolute;
+    bottom: -10%;
+    right: 0;
+    left: 45%;
+  }
+
+  /********** About/ Aktuells - Image Logo *****************/
+  .image-logo {
+    width: 150px;
+  }
+
+  /*********** Padding ********************/
+  .pb-70 {
+    padding-bottom: 160px;
+  }
+
+  .mb-bottom {
+    margin-bottom: 90px;
+  }
+}
+/* ========================== applies to medium devices (tablets, less than 992px) ================================= */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /******* Header ****/
+  nav .wrapper ._main-menu ._main-btn ._main-menu-btn {
+    display: inline-flex;
+    padding: 10px 5px 10px 10px;
+    font-size: 16px;
+  }
+
+  /******* SLIDER *************/
+  #video-corousel .bg-video-wrap .container .row .content {
+    position: absolute;
+    text-align: left;
+    top: 50%;
+    left: 10%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    z-index: 3;
+  }
+  #video-corousel .bg-video-wrap .container .row .content h1 {
+    margin-bottom: 15px;
+  }
+  #video-corousel .bg-video-wrap .container .row .content h6 {
+    margin-bottom: 15px;
+  }
+  #video-corousel .bg-video-wrap .container .row .content a {
+    text-decoration: none;
+  }
+  #video-corousel .bg-video-wrap .container .row .content-2 {
+    position: absolute;
+    /* top: 6%; */
+    bottom: -10%;
+    right: 0;
+    left: 45%;
+  }
+
+  /********** About/ Aktuells - Image Logo *****************/
+  .image-logo {
+    width: 140px;
+  }
+
+  /*********** Padding ********************/
+  .pb-70 {
+    padding-bottom: 145px;
+  }
+
+  /*********** Margin *****************/
+  .mb-bottom {
+    margin-bottom: 80px;
+  }
+}
+/* ========================== applies to small devices (landscape phones, less than 768px) ================================= */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /******* SLIDER *************/
+  #video-corousel .bg-video-wrap .container .row .content {
+    position: absolute;
+    text-align: left;
+    top: 20%;
+    left: 25%;
+    right: 0%;
+    margin: auto;
+    z-index: 3;
+  }
+  #video-corousel .bg-video-wrap .container .row .content h1 {
+    margin-bottom: 15px;
+  }
+  #video-corousel .bg-video-wrap .container .row .content h6 {
+    margin-bottom: 15px;
+  }
+  #video-corousel .bg-video-wrap .container .row .content a {
+    text-decoration: none;
+  }
+  #video-corousel .bg-video-wrap .container .row .content-2 {
+    position: absolute;
+    /* top: 6%; */
+    bottom: -10%;
+    right: 0;
+    left: 15%;
+  }
+  #video-corousel .bg-video-wrap .container .row .content-2 img {
+    width: 65% !important;
+  }
+
+  /********** About / Aktuells *******************/
+  .mobile-margin {
+    margin-bottom: 10rem;
+  }
+
+  .w-100 {
+    width: 80% !important;
+  }
+
+  /********** About/ Aktuells - Image Logo *****************/
+  .image-logo {
+    width: 120px;
+  }
+
+  /*********** Padding ********************/
+  .pb-70 {
+    padding-bottom: 50px;
+  }
+
+  /*********** Margin *****************/
+  .mb-bottom {
+    margin-bottom: 50px;
+  }
+}
+/* ========================== applies to x-small devices (portrait phones, less than 576px) ================================= */
+@media (max-width: 575.98px) {
+  /******* SLIDER *************/
+  #video-corousel .bg-video-wrap .container .row .content {
+    position: absolute;
+    text-align: left;
+    top: 25%;
+    left: 15%;
+    right: 0%;
+    margin: auto;
+    z-index: 3;
+  }
+  #video-corousel .bg-video-wrap .container .row .content h1 {
+    margin-bottom: 15px;
+  }
+  #video-corousel .bg-video-wrap .container .row .content h6 {
+    margin-bottom: 15px;
+  }
+  #video-corousel .bg-video-wrap .container .row .content a {
+    text-decoration: none;
+  }
+  #video-corousel .bg-video-wrap .container .row .content-2 {
+    position: absolute;
+    /* top: 6%; */
+    bottom: -10%;
+    right: 0;
+    left: 0%;
+  }
+
+  /*************** Footer ********************/
+  #footer .tags-size span a {
+    font-size: 0.8rem;
+  }
+
+  /********** About / Aktuells *******************/
+  .mobile-margin {
+    margin-bottom: 10rem;
+  }
+
+  .w-100 {
+    width: 80% !important;
+  }
+
+  /*-------- Image Logo ----------*/
+  .image-logo {
+    width: 150px;
+  }
+
+  /*********** Padding ********************/
+  .pb-70 {
+    padding-bottom: 40px;
+  }
+
+  /*********** Margin *****************/
+  .mb-bottom {
+    margin-bottom: 40px;
+  }
+}

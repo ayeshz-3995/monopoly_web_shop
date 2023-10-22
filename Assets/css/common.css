@@ -1,0 +1,367 @@
+:root {
+  /* =================== Global Colors ================================================== */
+  /* ============== Linear Gredient ======================================== */
+  --red-gradient-bg: linear-gradient(to right, var(--light-red), var(--dark-red));
+  --dark-overlay-bg: linear-gradient(to right, var(--dark-blue-overlay1), var(--dark-blue-overlay2));
+  /* -------------------   End - Global Colors ----------------------------  */
+
+  --site-max-width: 1380px;
+  --primary-color: #024D8D;
+  --secondary-color: #2DD0FF;
+  --secondary-light-color: #7DB7E4;
+  --secondary-light-color-25: rgba(150, 203, 255, 0.25);
+  --red-color: #C62022;
+  --dark-red-color: #971617;
+  --ash-color: #606060;
+  --ash-light-color: #c4c4c4;
+  --white: #ffffff;
+  --transparent-color: rgba(255, 255, 255, 0.0);
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* =================  Buttons =========================*/
+
+/* add hover effect to the a > span */
+a.link-btn {
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  transition: all 0.4s ease-in-out;
+  text-decoration: none;
+  padding: 10px 0;
+  margin: 5px 30px;
+  position: relative;
+}
+
+a.link-btn:focus,
+a.link-btn:hover {
+  position: relative;
+  outline: 0;
+  color: var(--primary-color);
+}
+
+a.link-btn span.btn-hover::before {
+  content: "";
+  transform-origin: 100% 50%;
+  transform: scale3d(0, 1, 1);
+  transition: transform 0.4s cubic-bezier(0.7, 0, 0.2, 1);
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  top: 78%;
+  left: 0;
+  pointer-events: none;
+}
+
+a.link-btn:hover span.btn-hover::before {
+  transform-origin: 0% 50%;
+  transform: scale3d(1, 1, 1);
+  transition-timing-function: cubic-bezier(0.4, 1, 0.8, 1);
+}
+
+/* Buttons > SUBSCRIBE BUTTON */
+.subscribe-btn {
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 5px;
+  width: max-content;
+  border: none;
+  text-align: center;
+  width: -webkit-fill-available;
+}
+
+.subscribe-btn {
+  color: var(--white);
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus,
+.subscribe-btn:active {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+
+/* Form Submit Button > hover */
+.btn:first-child:hover {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  border: none;
+}
+
+/* Buttons > Red Button */
+.red-btn {
+  background-color: var(--red-color);
+  padding: 5px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.red-btn:hover,
+.red-btn:focus {
+  background-image: linear-gradient(to right, var(--red-color), var(--dark-red-color));
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--white);
+}
+
+/* Mitmachen voting / partner Werden Button outline */
+.button-outline {
+  text-decoration: none;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  width: fill;
+  width: -webkit-fill-available;
+}
+
+.button-outline:hover {
+  background-color: var(--secondary-color) !important;
+  border: none !important;
+  color: var(--white) !important;
+}
+
+/* All Shops Hidden */
+.shop-hidden {
+  display: none;
+}
+
+/* end -  Buttons */
+
+
+.wrapper {
+  max-width: var(--site-max-width);
+  margin: auto;
+  padding: 0 25px;
+}
+
+.highlighted {
+  color: var(--secondary-color);
+}
+
+
+/* default-gap - Padding in Sections  - Responsive for Mobile, Desktop, Tabs and Medium Devices*/
+
+/* Desktop View  */
+@media (min-width: 992px) {
+  .default-padding {
+    padding: 120px 0px;
+  }
+
+  .section-padding {
+    padding: 120px 30px 120px 0px;
+  }
+
+}
+
+/* Medium Devices -Tabs  */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .default-padding {
+    padding: 100px 0px;
+  }
+
+  .section-padding {
+    padding: 100px 30px 100px 0px;
+  }
+}
+
+/* Small Devices- Mobile Landscape */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .default-padding {
+    padding: 100px 0px;
+  }
+
+  .section-padding {
+    padding: 100px 20px;
+  }
+}
+
+/* Xxtra Small Devices */
+@media (max-width: 575.98px) {
+  .default-padding {
+    padding: 100px 0px;
+  }
+
+  .section-padding {
+    padding: 100px 20px;
+  }
+}
+
+
+/* Background Colors */
+
+.bg-primary-color {
+  background-color: var(--primary-color);
+}
+
+.bg-white-color {
+  background-color: var(--white);
+}
+
+.bg-secondary-color {
+  background-color: var(--secondary-color);
+}
+
+.bg-secondary-light-color {
+  background-color: var(--secondary-light-color);
+}
+
+/* Headings - text color */
+.color-1 {
+  color: var(--primary-color);
+}
+
+.color-2 {
+  color: var(--secondary-color);
+}
+
+.color-3 {
+  color: var(--white);
+}
+
+.color-4 {
+  color: var(--ash-color);
+}
+
+/* Page Heading Section  - ALL Page Headings */
+.page-heading {
+  margin-top: var(--main-menu-height);
+  background-image: linear-gradient(to right, var(--secondary-light-color), var(--primary-color));
+}
+
+/* Faq Heading */
+.page-heading .faq-img {
+  margin-bottom: -15%;
+}
+
+
+/* Mitmachen Heading Image */
+.page-heading .mit-img {
+  margin-bottom: -8%;
+}
+
+/* Partner Werden Page > Heading image */
+.page-heading .partner-w-img {
+  margin-bottom: -4%;
+}
+
+.page-heading .link-btn {
+  text-transform: uppercase;
+}
+
+/* page Heading Button */
+.page-heading a.link-btn {
+  font-size: clamp(1.125rem, 0.9649rem + 0.3339vw, 1.25rem);
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  transition: all 0.4s ease-in-out;
+  text-decoration: none;
+  padding: 10px 0;
+  margin: 0;
+  position: relative;
+}
+
+.page-heading a.link-btn:focus,
+.page-heading a.link-btn:hover {
+  position: relative;
+  outline: 0;
+  color: var(--primary-color);
+}
+
+.page-heading a.link-btn span.btn-hover::before {
+  content: "";
+  transform-origin: 100% 50%;
+  transform: scale3d(0, 1, 1);
+  transition: transform 0.4s cubic-bezier(0.7, 0, 0.2, 1);
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  top: 78%;
+  left: 0;
+  pointer-events: none;
+}
+
+.page-heading a.link-btn:hover span.btn-hover::before {
+  transform-origin: 0% 50%;
+  transform: scale3d(1, 1, 1);
+  transition-timing-function: cubic-bezier(0.4, 1, 0.8, 1);
+}
+
+/* Responsive */
+/* Small Devices- Mobile Landscape */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .div-1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 15px;
+  }
+
+  .page-heading .stand-man-page .div-1,
+  .page-heading .stand-man-page .div-2 {
+    justify-content: center !important;
+    width: 100% !important;
+  }
+}
+
+/* Xxtra Small Devices */
+@media (max-width: 575.98px) {
+  .div-1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 15px;
+  }
+
+  .page-heading .stand-man-page .div-1,
+  .page-heading .stand-man-page .div-2 {
+    justify-content: center !important;
+    width: 100% !important;
+  }
+}
+
+/* End > Page Heading */
+
+/* Modal Background Blur */
+.modal-backdrop {
+  backdrop-filter: blur(10px);
+  --bs-backdrop-zindex: 1050;
+  --bs-backdrop-bg: #ffffff00;
+  --bs-backdrop-opacity: 0.9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--bs-backdrop-zindex);
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bs-backdrop-bg);
+}
+
+.modal-content {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
+}

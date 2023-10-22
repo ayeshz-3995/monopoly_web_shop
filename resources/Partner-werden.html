@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Monopoly Website</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+
+
+    <!------------ Fontawesome  link  ----------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--------  CSS - Styles ---------->
+    <link rel="stylesheet" href="../Assets/css/common.css">
+    <link rel="stylesheet" href="../Assets/css/page.css">
+    <link rel="stylesheet" href="../Assets/css/header.css">
+    <link rel="stylesheet" href="../Assets/css/local-fonts.css">
+    <link rel="stylesheet" href="../Assets/css/footer.css">
+
+</head>
+
+<body>
+
+
+
+
+    <!---==============================   HEADER - NAVIGATION BAR =====================================---->
+    <header>
+
+        <nav id="_main_navi_id" class="_main_navi">
+            <div class="wrapper">
+                <div class="logo"><a href="../index.html">Monopoly<br><span class="stadtname">$Stadtname</span></a>
+                </div>
+
+                <div class="_main-menu">
+
+                    <!-- add open/close raido-btns -->
+                    <input type="radio" name="slide" id="menu-btn">
+                    <input type="radio" name="slide" id="close-btn">
+
+                    <ul class="nav-links">
+
+                        <!--  link close ratio-btn with the lable  -->
+                        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+
+                        <li>
+                            <a href="../resources/Mitmachen.html" class="desktop-item link-btn"><span
+                                    class="btn-hover">Mitmachen</span></a>
+                            <input type="checkbox" id="showMeg-Mitmachen">
+                            <label for="showMeg-Mitmachen" class="mobile-item">Mitmachen</label>
+                            <div class="mega-box">
+                                <div class="content">
+                                    <div class="content-info">
+                                        <div class="content-img">
+                                            <img src="../Assets/img/header/star-dark.png" alt="">
+                                        </div>
+                                        <div class="content-text">
+                                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </h3>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quos
+                                                tempora
+                                                ipsum quibusdam amet accusantium, earum quia a laboriosam corrupti
+                                                delectus
+                                                commodi deserunt velit reprehenderit ipsa exercitationem provident ullam
+                                                quod?
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="../resources/Partner-werden.html" class="desktop-item link-btn"><span
+                                    class="btn-hover">Partner Werden</span></a>
+                            <input type="checkbox" id="showMeg-PartnerWerden">
+                            <label for="showMeg-PartnerWerden" class="mobile-item">Partner Werden</label>
+                            <div class="mega-box">
+                                <div class="content">
+                                    <div class="content-info">
+                                        <div class="content-img">
+                                            <img src="../Assets/img/header/hands.png" alt="">
+                                        </div>
+                                        <div class="content-text">
+                                            <h3>Consequatur quos tempora</h3>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quos
+                                                tempora
+                                                ipsum quibusdam amet accusantium, earum quia a laboriosam corrupti
+                                                delectus
+                                                commodi deserunt velit reprehenderit ipsa exercitationem provident ullam
+                                                quod?
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="../resources/Die-Edition.html" class="desktop-item link-btn"><span
+                                    class="btn-hover">Die Edition</span></a>
+                            <input type="checkbox" id="showMeg-DieEdition">
+                            <label for="showMeg-DieEdition" class="mobile-item">Die Edition</label>
+                            <div class="mega-box">
+                                <div class="content">
+                                    <div class="content-info">
+                                        <div class="content-img">
+                                            <img src="../Assets/img/header/monopoly-dark.png" alt="">
+                                        </div>
+                                        <div class="content-text">
+                                            <h3>Consequatur quos tempora</h3>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quos
+                                                tempora
+                                                ipsum quibusdam amet accusantium, earum quia a laboriosam corrupti
+                                                delectus
+                                                commodi deserunt velit reprehenderit ipsa exercitationem provident ullam
+                                                quod?
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <!--  link open ratio-btn with the lable  -->
+                    <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+
+                    <div class="_main-btn">
+                        <a href="../resources/Mitmachen-Vorschläge-einreichen.html" class="_main-menu-btn"><i
+                                class="ri-shopping-cart-2-line"></i>Vorbestellung</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <!-- End  HEADER - NAVIGATION BAR -->
+
+
+
+
+    <!----- ============================ Partner Werden > Page Heading =============================== ------->
+    <section class="page-heading">
+        <div class="container stand-man-page ">
+            <div class="row d-flex  align-items-center">
+                <div class=" col-md-7 div-1 align-items-center w-50 justify-content-start">
+                    <h1 class="mb-3 page-heading-title color-3"><span class="color-2"> MiTMACHEN </span>
+                        UND MITGESTALTEN </h1>
+                    <h6 class="mb-3 body_text color-3">Schlage Deine Lieblingsstraße für das Monopoly $Stadtname vor
+                        oder sende uns
+                        Deine Ideen für das Monopoly $Stadtname und gewinne 1 von 3 Monopoly $Stadtname.
+                    </h6>
+                    </h6>
+                </div>
+                <div class="col-md-5 div-2  d-flex justify-content-end">
+                    <img class="w-75 partner-w-img" src="../Assets/img/partner-warden-page/partner-warden.png"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--- End- Page Heading-->
+
+
+
+
+    <!-- ======================================= Partner Werden > Video ============================================== -->
+    <section id="standtmonopoly-video" class="">
+        <div class="video-container">
+            <video autoplay loop muted>
+                <!-- Add your video source here -->
+                <source src="../Assets/video/hero-video.mp4" type="video/mp4">
+            </video>
+            <button class="btn play-button">
+                <i class="fa fa-play-circle fa-4x"></i> <!-- Bootstrap play icon -->
+            </button>
+        </div>
+
+        <div class="standt-overlay">
+            <button class="btn subscribe-btn body_text ">Infomappe anfordern</button>
+        </div>
+    </section>
+    <!-- End > Video Section -->
+
+
+
+
+    <!-- ============================================ Partner Werden > Street Select Section ==================================== -->
+    <section class="partner-street">
+        <div class="container section-padding">
+            <div class="row m-0">
+                <div class="col-md-6 p-5 ps-0">
+                    <h3 class="title_3 color-1 mb-4"> Machen Sie eine Straße <br>
+                        <span class="color-2"> zu Ihrer Straße!</span>
+                    </h3>
+                    <form id="contactForm" action="#" method="post">
+                        <div class="row">
+                            <div class="col-md-12 mb-4">
+                                <select class="form-select body_text color-4" aria-label="Default select example">
+                                    <option selected>Straße(n) auswählen</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="col-md-12 mb-4">
+                                <input type="text" class="form-control  body_text color-4" id="Unternehmen"
+                                    placeholder="Dein Name" name="Unternehmen" required>
+                            </div>
+                            <div class="p-2 body_text color-4"> <span class="title_7 color-1 "> Da schau an!
+                                </span>So könnte Ihre
+                                Unternehmenspräsentation im Monopoly
+                                $Stadtname
+                                aussehen*.
+                                Haben wir Ihr Interesse geweckt, dann fordern Sie gleich unsere Infomappe an.</div>
+                            <div class="col-md-12  d-grid">
+                                <button type="submit button" class="btn mb-3 subscribe-btn d-grid"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal2">Senden</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <div class="box all-card-style p-3 pt-0">
+                        <div class="card text-center w-75 mb-4">
+                            <div class="card-header">
+
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title mt-4 mb-4"> <span>HAUPTSTRASSE</span> </h4>
+                                <h4 class="card-title mb-4">Max Mustermann <br>
+                                    GmbH & Co. KG</h4>
+                                <img src="../Assets/img/partner-warden-page/weissen-kirchen.png" class="w-75"
+                                    alt="">
+                            </div>
+                            <div class="box-shadow-bottom"></div>
+                        </div>
+                        <p>* beispielhafte Darstellung zur Ansicht. Entspricht nicht dem <br>
+                            späteren Motiv auf dem Spielbrett oder der Besitzrechtskarte!</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End > Street Section -->
+
+
+
+
+    <!-- ===================================================== Imgages with Text Paragraphs Section ================================ -->
+    <section>
+        <div class="container section-padding">
+
+            <!--- First Row -->
+            <div class="row m-0 d-flex align-items-center">
+                <div class="col-md-4">
+                    <img src="../Assets/img/partner-warden-page/pw-1.png" class="w-100" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <h3 class="title_3 color-1 mb-5">Bringen Sie Ihr Unternehmen <span class="color-2"> ins
+                            Spiel!</span>
+                    </h3>
+                    <p class="body_text color-4">Bald erscheint die Monopoly Edition $Stadtname. Bis zu 10.000 Exemplare
+                        des
+                        Spiele-Klassikers sind geplant. Dank starker Medienpartner wird die $Stadtname Edition ab
+                        der ersten Präsentation $Präsentationszeitraum bis zur Erscheinung ständig in aller Munde
+                        sein. Nutzen auch Sie die Möglichkeit und profitieren Sie von der einzigartigen Strahlkraft
+                        des bekanntesten Brettspiel Deutschlands. Und das über Jahrzehnte! Erreichen Sie dauerhaft
+                        mehrere zehntausend Spieler.
+                    </p>
+                </div>
+            </div>
+            <!--- Secondt Row -->
+            <div class="row m-0 d-flex align-items-center">
+                <div class="col-md-7">
+                    <h3 class="title_3 color-1 mb-5">Ein Spiel - <span class="color-2"> viele Möglichkeiten.</span>
+                    </h3>
+                    <p class="body_text color-4">Es gibt verschiedene Arten der Integration in der Monopoly Edition
+                        $Stadtname. Neben den klassischen Straßenpatenschaften können die Texte der Ereignis- und
+                        Gemeinschaftskarten individualisiert werden. Außerdem besteht die Möglichkeit, unter
+                        bestimmten Voraussetzungen Partner auf Spielbrett oder Verpackung abzubilden. Alle Pakete
+                        können individuell auf den jeweiligen Partner zugeschnitten werden. Für ausgewählte Partner
+                        bestehen darüber hinaus weitere Werbeformen.
+                    </p>
+                </div>
+                <div class="col-md-5 image-slider">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active h-100">
+                                <img src="../Assets/img/partner-warden-page/pw-2.png" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item h-100">
+                                <img src="../Assets/img/partner-warden-page/pw-1.png" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item h-100">
+                                <img src="../Assets/img/partner-warden-page/pw-2.png" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End > Imgages with Text Paragraphs Section -->
+
+
+
+
+    <!-- =========================================== Ihr Ansprechpartner Section ============================================= -->
+    <section>
+        <div class="container ansprechpartner-bg p-3 pb-0">
+            <div class="row">
+                <div class="col-md-6 align-items-center d-grid">
+                    <h3 class="title_3 color-1 p-0"> <span>Ihr Ansprechpartner</span>
+                    </h3>
+                    <h6 class="title_6 color-1">Kundenbetreuung & Vertrieb</h6>
+                </div>
+                <div class="col-md-2 werdenWiederverkäufer-contact">
+                    <img src="../Assets/img/wiederverkaufer-page/kontakt_julius.png" alt="" class="werden-1">
+                    <img src="../Assets/img/wiederverkaufer-page/back-elipse.png" alt="" class="werden-2 ">
+                    <img src="../Assets/img/wiederverkaufer-page/mask.png" alt="" class="werden-3">
+                </div>
+                <div class="col-md-4 werden-subscribe d-grid">
+                    <h6 class="body_text fw-bold color-1 mb-1">Julius Tannert
+                    </h6>
+                    <a href="mailto: julius.tannert@polar-games.de"
+                        class=" body_text_small color-1">julius.tannert@polar-games.de</a>
+                    <button type="submit" class=" body_text color-3 subscribe-btn mb-3"><i
+                            class="fa-solid fa-phone-square"></i>
+                        <a href="tel:037587397021" class="body_text color-3"> 0375 87
+                            39 70 21</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End > Ihr Anprechpartner Section -->
+
+
+
+
+    <!-- ============================================== Section Padding ======================================= -->
+    <section class="section-padding pb-0">
+
+    </section>
+    <!--End  > Section Padding -->
+
+
+
+
+    <!-- =================================================== Contact Form Section ===================================== -->
+    <section class="mitmachen-newsletter ">
+        <div class="container">
+            <div class="row d-flex align-items-center m-0  text-left">
+                <h3 class="title_3 color-1 mb-3"><span>Jetzt Infomappe anfordern und </span>
+                </h3>
+                <h3 class="title_3 color-2 mb-5">mehr Informationen erhalten.
+                </h3>
+                <div class="col-md-10 mb-5">
+                    <p class="body_text color-4">Fordern Sie jetzt gleich kostenlos und unverbindlich unsere Infomappe
+                        mit vielen
+                        Informationen zu
+                        den Möglichkeiten für Partner an. Sie erhalten schnellstmöglich eine E-Mail mit allen
+                        Informationen!</p>
+                </div>
+
+            </div>
+            <div class="row  m-0 d-flex align-items-stretch">
+                <div class="row">
+                    <div class="col-md-6">
+                        <form id="contactForm" action="#" method="post">
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control body_text color-4 " id="Vorname"
+                                        placeholder="Vorname" name="Vorname" required>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control body_text color-4 " id="Nachname"
+                                        placeholder="Nachname" name="Nachname" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control body_text color-4 " id="Unternehmen"
+                                        placeholder="Unternehmen" name="Unternehmen" required>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <input type="tel" class="form-control body_text color-4 " id="Telefon"
+                                        placeholder="Telefon" name="Telefon" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 mb-4">
+                                    <input type="email" class="form-control body_text color-4 " id="email"
+                                        placeholder="Ihre Mail-Adresse" name="email" required>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <form id="contactForm" action="#" method="post">
+                            <div class="row">
+                                <div class="col-md-12 mb-3">
+                                    <textarea class="form-control body_text color-4 " id="message"
+                                        placeholder="Bemerkung" name="message" rows="6" required></textarea>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row  m-0 d-flex align-items-stretch">
+                <div class="col-md-6">
+                    <form id="contactForm" action="#" method="post">
+                        <div class="row">
+                            <div class="col-md-12 mb-4 form-check">
+                                <input class="form-check-input body_text color-4 " type="checkbox" value=""
+                                    id="flexCheckDefault">
+                                <label class="form-check-label body_text_extra_small color-4 " for="flexCheckDefault">
+                                    Ich habe die Datenschutzerklärung gelesen und akzeptiere die Bedingungen.
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <!-- Button trigger modal -->
+                    <button type="submit button" class="btn mb-3 subscribe-btn d-grid" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal3">Senden</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <section>
+        <div class="modal fade modal-dialog" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="container-fluid p-0">
+                            <div class="row m-0">
+                                <div class="col-6 col-md-6 d-grid align-items-center">
+                                    <h4 class="title_4 color-1"> Vielen Dank für
+                                        Deine Stimme!</h4>
+                                    <p class="body_text color-4">Hast du schon Dein persönliches Exemplar vorbestellt?
+                                    </p>
+                                    <a href="#" class="red-btn body_text color-3"><i
+                                            class="fas fa-cart-shopping me-2"></i><span>Vorbestellung</span></a>
+                                </div>
+                                <div class="col-5 col-md-5 d-flex align-items-center">
+                                    <img class=" w-100"
+                                        src="../Assets/img/mitmachen-page/MONOPOLY-Wuerzburg-verpackt.png"
+                                        alt="">
+                                </div>
+                                <div class="col-md-1 col-1">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- End > Contact Form Section -->
+
+
+
+
+    <!--=========================================== MAIN FOOTER  ===========================================-->
+    <footer>
+        <div class="content-wrapper pb-0">
+            <div class="footer-top">
+
+                <div class="footer-logo">
+                    <a href="../index.html">Monopoly<br><span class="stadtname">$Stadtname</span></a>
+                </div>
+
+                <div class="social-icons">
+                    <a href="#"><i class="ri-facebook-box-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                </div>
+
+                <div class="footer-menu" id="f-menu-1">
+                    <ul>
+                        <li id="m-list-1"><a href="../resources/faq.html" target="_blank">FAQ</a></li>
+                        <li id="m-list-2"><a href="../resources/Presse.html" target="_blank">Presse</a></li>
+                        <li id="m-list-3"><a href="../resources/Verkaufsstellen.html" target="_blank">Verkaufstellen</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-menu" id="f-menu-2">
+                    <ul>
+                        <li id="m-list-4"><a href="../resources/Wiederverkäufer-werden.html"
+                                target="_blank">Wiederverkäufer werden</a></li>
+                        <li id="m-list-5"><a href="../resources/Partner-werden.html" target="_blank">Partner</a></li>
+                        <li id="m-list-6"><a href="../resources/Stadtmonopoly.html" target="_blank">Ihre Stadt - Ihr
+                                Monopoly</a></li>
+                    </ul>
+                </div>
+
+                <div id="f-menu-3">
+                    <ul>
+                        <li><a href="#" target="_blank">Kontakt</a></li>
+                        <li><a href="#" target="_blank">AGB</a></li>
+                        <li><a href="#" target="_blank">Datenschutz</a></li>
+                        <li><a href="#" target="_blank">Impressum</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <div class="f-bottom-logos">
+                    <div class="f-logos"><span>License By</span><img src="../Assets/img/footer/licensed-by-img.png"
+                            alt="">
+                    </div>
+                    <div class="f-logos"><span>In kooperation mit <br>WINNING MOVES</span><img
+                            src="../Assets/img/footer/kooperation-img.png" alt=""></div>
+                </div>
+
+                <div class="f-text">
+                    <p>Der MONOPOLY-Name und das dazugehörige Logo, die Gestaltung des Spielplans, die vier Eckfelder,
+                        Name und Figur des MR. MONOPOLY sowie alle Elemente des Spielplans und die Spielfiguren sind
+                        eingetragene Warenzeichen von Hasbro.</p>
+                    <p>© 1935, 2023 Hasbro. Alle Rechte vorbehalten. Winning
+                        Moves Deutschland GmbH, Münsterstraße 359, 40470 Düsseldorf.</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- End main footer -->
+    
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+    <!---- Fontawesome ---------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+        integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!-- add jquery for the scroll effect -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!---------------------- Main.js-->
+    <script src="../Assets/js/main.js" type="text/javascript"></script>
+
+
+
+</body>
+
+</html>

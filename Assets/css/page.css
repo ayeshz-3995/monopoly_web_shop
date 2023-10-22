@@ -1,0 +1,1023 @@
+@charset "UTF-8";
+
+
+/** ============================================ Home Page Hero Section ============================****/
+.video-hero {
+  position: relative;
+  margin-top: var(--main-menu-height);
+  height: 88vh;
+  width: 100%;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-hero::after {
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(45deg, rgba(3, 62, 119, 0.5), rgba(3, 62, 119, 0.9));
+  z-index: 10;
+}
+
+.video-hero video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  object-fit: cover;
+}
+
+.video-hero .wrapper {
+  position: relative;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.wrapper .left {
+  width: 55%;
+  margin-right: -50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  color: #fff;
+}
+
+.wrapper .left p {
+  width: 80%;
+}
+
+.wrapper .left a {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 5px;
+  color: #fff;
+}
+
+.wrapper .left a span {
+  display: inline-flex;
+}
+
+.wrapper a.link-btn:hover {
+  color: #fff;
+}
+
+
+
+.wrapper .right {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.wrapper .right img {
+  width: 700px;
+  height: auto;
+  margin-bottom: -50px;
+  margin-right: 0;
+}
+
+
+.video-hero .wurfel-img {
+  position: absolute;
+  left: 20px;
+  bottom: -80px;
+}
+
+.video-hero .wurfel-img img {
+  width: 90%;
+  height: auto;
+}
+
+
+/* mobile css for video hero */
+@media screen and (max-width: 1280px) {
+  .wrapper .right img {
+    width: 600px;
+    height: auto;
+    margin-right: 0;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+  .video-hero {
+    height: 100vh;
+  }
+
+  .video-hero .wrapper {
+    padding: 80px 25px 0 25px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .wrapper .left,
+  .wrapper .right {
+    width: 90%;
+    margin: 0;
+  }
+
+  .wrapper .left p {
+    width: 100%;
+  }
+
+
+  .wrapper .right img {
+    width: 80%;
+    margin-top: -25%;
+    /* margin-bottom: -25px; */
+  }
+
+  .video-hero .wurfel-img {
+    display: none;
+  }
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .video-hero .wrapper {
+    padding: 120px 25px 0 25px;
+  }
+
+  .wrapper .right img {
+    width: 400px;
+    margin: 0;
+    margin-top: -10%;
+    /* margin-bottom: -35px; */
+  }
+}
+
+
+/* ------ Home > about section ------ */
+.about-section .wrapper {
+  padding: 150px 25px 0 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  width: 100%;
+}
+
+.wrapper .div-1 {
+  width: 35%;
+}
+
+.wrapper .div-1 h2 {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.wrapper .div-2 {
+  width: 50%;
+}
+
+.wrapper .div-3 img {
+  width: 90%;
+}
+
+
+@media screen and (max-width: 900px) {
+  .about-section .wrapper {
+    padding: 100px 25px 0 25px;
+    flex-direction: column;
+  }
+
+  .wrapper .div-1,
+  .wrapper .div-2,
+  .wrapper .div-3 {
+    width: 100%;
+  }
+}
+
+
+/* ------ Home > facts section ------ */
+.facts .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 120px 30px;
+  overflow: hidden;
+}
+
+.facts .info-box {
+  padding: 25px;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background-size: cover;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8)), url(../../Assets/img/home-page/about/home-about-light-background-facts.png);
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 25px;
+  width: 22%;
+}
+
+.facts .info-box .info-icon {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: -80px;
+  padding-bottom: 32px;
+}
+
+.info-icon .bg-icon {
+  width: 180px;
+  height: 160px;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background-size: contain;
+  transition: all 0.4s ease-in-out;
+}
+
+.info-icon #info-icon-1 {
+  background-image: url(../../Assets/img/home-page/about/logo-1-light.png);
+}
+
+.info-icon #info-icon-2 {
+  background-image: url(../../Assets/img/home-page/about/logo-2-light.png);
+}
+
+.info-icon #info-icon-3 {
+  background-image: url(../../Assets/img/home-page/about/logo-3-light.png);
+}
+
+.info-icon #info-icon-4 {
+  background-image: url(../../Assets/img/home-page/about/logo-4-light.png);
+}
+
+
+.facts .info-box h3 {
+  color: var(--secondary-color);
+  font-weight: 700;
+  /* width: 70%; */
+}
+
+
+.facts .info-box a {
+  padding: 0;
+  padding-bottom: 5px;
+  margin: 0;
+
+}
+
+.facts .info-box a span {
+  color: var(--primary-color);
+  font-weight: 700;
+  display: inline-flex;
+  gap: 5px;
+}
+
+
+
+/* hover effects */
+.info-box:hover .bg-icon {
+  transform: scale(1.2);
+  transition: all 0.4s ease-in-out;
+}
+
+.info-box:hover #info-icon-1 {
+  background-image: url(../../Assets/img/home-page/about/logo-1-dark.png);
+}
+
+.info-box:hover #info-icon-2 {
+  background-image: url(../../Assets/img/home-page/about/logo-2-dark.png);
+}
+
+.info-box:hover #info-icon-3 {
+  background-image: url(../../Assets/img/home-page/about/logo-3-dark.png);
+}
+
+.info-box:hover #info-icon-4 {
+  background-image: url(../../Assets/img/home-page/about/logo-4-dark.png);
+}
+
+.info-box:hover h3 {
+  transition: all 0.4s ease-in-out;
+  color: var(--primary-color);
+}
+
+.info-box:hover a.link-btn span.btn-hover::before {
+  transform-origin: 0% 50%;
+  transform: scale3d(1, 1, 1);
+  transition-timing-function: cubic-bezier(0.4, 1, 0.8, 1);
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+  .facts .wrapper {
+    flex-wrap: wrap;
+    padding: 100px 45px;
+  }
+
+  .facts .info-box {
+    width: 47%;
+    margin-bottom: 80px;
+  }
+
+}
+
+/* Small Devices- Mobile Landscape */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .facts .margin-bottom-zero {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .facts .info-box {
+    width: 100%;
+  }
+
+}
+
+
+/* ------ Home > Aktuells section ------ */
+.actuelles-section .card {
+  border: 0;
+
+}
+
+.actuelles-section .card-body,
+.card-footer,
+.actuelles-section .card-footer .link-btn {
+  text-align: left;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.actuelles-section .bg-primary-color h4,
+.bg-primary-color p {
+  color: var(--white);
+}
+
+.actuelles-section .bg-primary-color a {
+  color: var(--secondary-color);
+}
+
+.actuelles-section .bg-white-color .card-footer,
+.bg-primary-color .card-footer {
+  background-color: transparent;
+  border: none;
+}
+
+.actuelles-section .date-and-text p,
+.actuelles-section .date-and-text a {
+  color: var(--ash-color);
+}
+
+.actuelles-section .bg-white-color h6 {
+  color: var(--primary-color);
+}
+
+.actuelles-section .btn-hover:hover {
+  font-size: 1rem;
+}
+
+.actuelles-section .bg-white-color .btn-hover {
+  color: var(--primary-color);
+}
+
+.actuelles-section .bg-primary-color .btn-hover {
+  color: var(--secondary-color);
+}
+
+.actuelles-section .bg-white-color .btn-hover:hover {
+
+  color: var(--primary-color);
+}
+
+.actuelles-section .bg-primary-color .btn-hover:hover {
+  color: var(--white);
+}
+
+/* Responsive -  */
+
+/* Desktop View  */
+@media (min-width: 992px) {
+  .actuelles-section .bg-primary-color {
+    padding: 30px 30px;
+  }
+}
+
+/* Medium Devices -Tabs  */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .actuelles-section .bg-primary-color {
+    padding: 25px 25px;
+  }
+}
+
+/* Small Devices- Mobile Landscape */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .actuelles-section .bg-primary-color {
+    padding: 25px 10px;
+  }
+}
+
+/* Xxtra Small Devices */
+@media (max-width: 575.98px) {
+  .actuelles-section .bg-primary-color {
+    padding: 25px 10px;
+  }
+}
+
+
+
+/* Home > Newsletter Section  */
+.newsletter-section {
+  background-image: url("../img/newsletter/newsletter-bg.png");
+  background-size: contain;
+  background-repeat: repeat;
+  padding: 50px 0px;
+
+}
+
+.newsletter-section h3 {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.newsletter-section .newsletter-width {
+  max-width: var(--site-max-width);
+  margin: auto;
+}
+
+.newsletter-section .form-border-color {
+  border: 2px solid var(--ash-color);
+}
+
+/* Responsive - Newsletter */
+/* Small Devices- Mobile Landscape */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .newsletter-section .mobile-order1 {
+    order: 1;
+  }
+
+  .newsletter-section .mobile-order2 {
+    order: 2;
+  }
+
+  .newsletter-section .mobile-order3 {
+    order: 3;
+  }
+}
+
+/* Xxtra Small Devices */
+@media (max-width: 575.98px) {
+  .newsletter-section .mobile-order1 {
+    order: 1;
+  }
+
+  .newsletter-section .mobile-order2 {
+    order: 2;
+  }
+
+  .newsletter-section .mobile-order3 {
+    order: 3;
+  }
+}
+
+/* Home > Die Partners Section */
+.die-partners h6 {
+  font-weight: 600;
+}
+
+
+/* ==================================== ACTUELLS PAGE =============================================== */
+.aktuells-blog-section h6 a:hover {
+  color: var(--primary-color);
+}
+
+/* ==================================== ARTIKELESEITE PAGE ===========================================*/
+.Artikelseite-page-heading {
+  margin-top: var(--main-menu-height);
+  height: 500px;
+
+}
+
+.Artikelseite-page-heading .div-1 {
+  background-color: var(--primary-color);
+  margin-bottom: 0;
+  z-index: 10;
+
+
+}
+
+.Artikelseite-page-heading .div-2 {
+  background-size: cover;
+  color: white;
+  padding: 20px;
+  height: 500PX;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background-image: linear-gradient(to right, var(--primary-color), #024c8d8b, #024c8d00, #ffffff00), url("../img/Artikelseite-page/Artikelseite.png");
+}
+
+/* ===================================== DIE EDITION PAGE ====================================================== */
+.die-description {
+  background-color: var(--secondary-light-color-25);
+}
+
+
+/*================================== FAQ - Page ========================================================= */
+.faq-accordion .accordion-button:not(.collapsed) {
+  color: var(--primary-color);
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.faq-accordion .accordion-button {
+  color: var(--primary-color);
+  font-family: "poppins", sans-serif;
+  font-size: clamp(1.875rem, 1.0747rem + 1.6694vw, 2.5rem);
+  font-weight: 600;
+}
+
+/* ===================================== Mitmachen Vorschlage  Page ====================================== */
+.mitmachen-newsletter {
+  background-image: url("../img/newsletter/newsletter-bg.png");
+  background-size: contain;
+  background-repeat: repeat;
+  padding: 50px 0px;
+}
+
+.mitmachen-newsletter .form-select,
+.mitmachen-newsletter .form-control,
+.mitmachen-newsletter .form-check-input {
+  border: 2px solid var(--ash-color);
+  box-shadow: none;
+}
+
+.mitmachen-newsletter .form-select:focus,
+.mitmachen-newsletter .form-select:hover,
+.mitmachen-newsletter .form-control:hover,
+.mitmachen-newsletter .form-control:focus,
+.mitmachen-newsletter .form-check-input:hover,
+.mitmachen-newsletter .form-check-input:focus {
+  border: 2px solid var(--primary-color);
+  box-shadow: none;
+}
+
+/* Mitmachen > Street Shops Section */
+.all-card-style .card {
+  border: 7px solid #000;
+  border-radius: 0;
+}
+
+.all-card-style .card .card-header {
+  border-bottom: 7px solid #000;
+  background-color: var(--secondary-light-color);
+  height: 100px;
+  border-radius: 0;
+}
+
+.all-card-style .card .card-title {
+  font-weight: 500;
+  font-family: "kabel";
+}
+
+.all-card-style .card .box-shadow-bottom {
+  height: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 40px -54px inset;
+}
+
+.all-card-style p {
+  font-style: italic;
+  color: var(--ash-light);
+  font-size: 0.8rem;
+}
+
+/*------ ======================================= MITMACHEN VOTING PAGE ========================================== -- */
+/* MITMACHEN > All Button */
+.mitmatchen-votinng-heading .line hr {
+  color: var(--primary-color) !important;
+  border-width: 3px;
+  opacity: 1;
+}
+
+.mit-voting-column {
+  background-image: url("../img/newsletter/newsletter-bg.png");
+  background-size: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.mit-voting-column .senden-btn {
+  background-color: var(--ash-color);
+  color: var(--white);
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill;
+  align-items: center;
+  font-weight: 600;
+}
+
+.mit-voting-column .senden-btn:hover {
+  background-color: var(--secondary-color);
+  color: var(--white);
+}
+
+/*-- ==============================================  PARTNER WERDEN PAGE =============================================== -- */
+/*-- Partner Werden > Video Section -- */
+#standtmonopoly-video {
+  position: relative;
+  padding: 100px;
+}
+
+#standtmonopoly-video .video-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  z-index: -1;
+  background-image: linear-gradient(45deg, rgba(3, 62, 119, 0.5) 50%, rgba(3, 62, 119, 0.9) 50%);
+  border-radius: 10px;
+  /* Place the video behind other elements */
+}
+
+#standtmonopoly-video .video-container video {
+  position: relative;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#standtmonopoly-video .video-container .play-button {
+  color: var(--white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#standtmonopoly-video .standt-overlay {
+  position: absolute;
+  bottom: 18%;
+  right: 15%;
+  text-align: end;
+  z-index: 1;
+}
+
+#standtmonopoly-video .standt-overlay button {
+  padding: 5px 20px;
+}
+
+#standtmonopoly-video .standt-text h1 {
+  position: absolute;
+}
+
+/* Responsive */
+/* Small Devices- Mobile Landscape */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #standtmonopoly-video {
+    position: relative;
+    padding: 50px;
+  }
+
+}
+
+/* Xxtra Small Devices */
+@media (max-width: 575.98px) {
+  #standtmonopoly-video {
+    position: relative;
+    padding: 30px;
+  }
+
+}
+
+/* Partner Werden > STREET SECTION */
+.partner-street {
+  background-color: var(--secondary-light-color-25);
+}
+
+/* Street Section > Image Slider Icons  */
+.image-slider .carousel-control-prev-icon {
+  background-image: url("../img/partner-warden-page/prew-1.png");
+  opacity: 1;
+}
+
+.image-slider .carousel-control-prev-icon:hover {
+  opacity: 0.5;
+}
+
+.image-slider .carousel-control-next-icon {
+  background-image: url("../img/partner-warden-page/prew-2.png");
+  opacity: 1;
+}
+
+.image-slider .carousel-control-next-icon:hover {
+  opacity: 0.5;
+}
+
+.image-slider .carousel-control-prev,
+.image-slider .carousel-control-next {
+  opacity: 1 !important;
+}
+
+/* Partner Werden Page > Ihr Ansprechpartner Section */
+.ansprechpartner-bg {
+  background-color: var(--secondary-light-color-25);
+}
+
+.ansprechpartner-bg .werdenWiederverkäufer-contact:hover .werden-1,
+.ansprechpartner-bg .werdenWiederverkäufer-contact:hover .werden-2,
+.ansprechpartner-bg .werdenWiederverkäufer-contact:hover .presse-1,
+.ansprechpartner-bg .werdenWiederverkäufer-contact:hover .presse-2 {
+  transform: scale(1.2);
+  transition: transform 0.5s ease-in-out;
+  -webkit-transition: transform 0.5s ease-in-out;
+}
+
+.ansprechpartner-bg .werdenWiederverkäufer-contact:hover .werden-3,
+.ansprechpartner-bg .werdenWiederverkäufer-contact:hover .presse-3 {
+  transform: translateY(25%) scale(1, 1);
+  transition: transform 0.5s ease-in-out;
+  -webkit-transition: transform 0.5s ease-in-out;
+}
+
+.ansprechpartner-bg .werdenWiederverkäufer-contact .werden-1,
+.ansprechpartner-bg .werdenWiederverkäufer-contact .presse-1 {
+  position: absolute;
+  z-index: 10;
+}
+
+.ansprechpartner-bg .werdenWiederverkäufer-contact .werden-2,
+.ansprechpartner-bg .werdenWiederverkäufer-contact .presse-2 {
+  z-index: 5;
+}
+
+.ansprechpartner-bg .werdenWiederverkäufer-contact .werden-3,
+.ansprechpartner-bg .werdenWiederverkäufer-contact .presse-3 {
+  z-index: -10;
+}
+
+/* Responsive > Ansprechpartner section */
+/* Large Devices */
+@media (min-width: 992px) {
+
+  /**************** wiederverkaufer-werden ****************/
+  .werdenWiederverkäufer-contact .werden-1 {
+    width: 150px;
+    margin-top: 1%;
+  }
+
+  .werdenWiederverkäufer-contact .presse-1 {
+    width: 150px;
+    margin-top: 0.3%;
+  }
+
+  .werdenWiederverkäufer-contact .werden-2 {
+    margin-bottom: -115%;
+    width: 150px;
+  }
+
+  .werdenWiederverkäufer-contact .presse-2 {
+    margin-bottom: -115%;
+    width: 150px;
+  }
+
+  .werdenWiederverkäufer-contact .werden-3 {
+    margin-left: -30%;
+    margin-top: -20%;
+    width: 170px;
+  }
+
+  .werdenWiederverkäufer-contact .presse-3 {
+    width: 170px;
+    margin-left: -30%;
+    margin-top: -20%;
+  }
+}
+
+/* applies to medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  /**************** wiederverkaufer-werden ****************/
+  .werdenWiederverkäufer-contact .werden-1 {
+    width: 100px;
+    margin-top: 3%;
+  }
+
+  .werdenWiederverkäufer-contact .presse-1 {
+    width: 100px;
+    margin-top: 2%;
+  }
+
+  .werdenWiederverkäufer-contact .werden-2 {
+    width: 100px;
+    margin-bottom: -170%;
+  }
+
+  .werdenWiederverkäufer-contact .presse-2 {
+    width: 100px;
+    margin-bottom: -170%;
+  }
+
+  .werdenWiederverkäufer-contact .werden-3 {
+    width: 120px;
+    margin-left: -40%;
+    margin-top: -20%;
+  }
+
+  .werdenWiederverkäufer-contact .presse-3 {
+    width: 120px;
+    margin-left: -40%;
+    margin-top: -20%;
+  }
+}
+
+/* applies to small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+  /**************** wiederverkaufer-werden ****************/
+  .ansprechpartner-bg .row {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .ansprechpartner-bg .row .werdenWiederverkäufer-contact .werden-1 {
+    width: 100px;
+    margin-top: -2%;
+  }
+
+  .ansprechpartner-bg .row .werdenWiederverkäufer-contact .presse-1 {
+    width: 100px;
+    margin-top: -3.5%;
+  }
+
+  .ansprechpartner-bg .row .werdenWiederverkäufer-contact .werden-2 {
+    width: 100px;
+  }
+
+  .ansprechpartner-bg .row .werdenWiederverkäufer-contact .presse-2 {
+    width: 100px;
+  }
+
+  .ansprechpartner-bg .row .werdenWiederverkäufer-contact .werden-3 {
+    width: 110px;
+    margin-left: -25%;
+    margin-top: 0%;
+  }
+
+  .ansprechpartner-bg .row .werdenWiederverkäufer-contact .presse-3 {
+    width: 110px;
+    margin-left: -25%;
+    margin-top: 0%;
+  }
+}
+
+/* applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+  /**************** wiederverkaufer-werden ****************/
+  .ansprechpartner-bg .row {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .ansprechpartner-bg .row .werdenWiederverkäufer-contact .werden-1 {
+    width: 100px;
+    margin-top: -3%;
+  }
+
+  .ansprechpartner-bg .row .werdenWiederverkäufer-contact .werden-2 {
+    width: 100px;
+  }
+
+  .ansprechpartner-bg .row .werdenWiederverkäufer-contact .werden-3 {
+    width: 110px;
+    margin-left: -32%;
+    margin-top: -1%;
+    z-index: -1;
+  }
+
+  .ansprechpartner-bg .row .werdenWiederverkäufer-contact .presse-1 {
+    width: 100px;
+    margin-top: -5.3%;
+  }
+
+  .ansprechpartner-bg .row .werdenWiederverkäufer-contact .presse-2 {
+    width: 100px;
+  }
+
+  .ansprechpartner-bg .row .werdenWiederverkäufer-contact .presse-3 {
+    width: 110px;
+    margin-left: -32%;
+    margin-top: -1%;
+    z-index: -1;
+  }
+}
+
+
+/*-- ========================================== PRESEE DOWNLOAD PAGE ============================================================== */
+.Download-card .card {
+  border: none;
+}
+
+.Download-card .card .card-footer {
+  padding-left: 0;
+  background-color: var(--white);
+}
+
+.Download-card .card .card-footer .img-size-type a {
+  text-decoration: none;
+  color: var(--ash-color);
+  font-weight: 400;
+}
+
+.Download-card .card .card-footer .img-size-type p {
+  text-decoration: none;
+  color: var(--ash-color);
+  font-weight: 400;
+}
+
+.Download-card .card .card-footer a {
+  color: var(--primary-color);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Press Fownload > title */
+@media (max-width: 575.98px) {
+  .press-d-ttitle {
+    flex-direction: column;
+  }
+}
+
+/* End > Press Download Page */
+
+
+/* ============================================================== PRESSE PAGE =======================================================*/
+.verkauf-place-div {
+  background-color: var(--secondary-light-color-25);
+  border-radius: 10px;
+  height: 200px;
+}
+
+/* applies to small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .verkauf-place-div {
+    margin-bottom: 2.2rem;
+  }
+
+  .verkauf-place-div2 {
+    padding-left: 0 !important;
+  }
+}
+
+/* Presse Page > image box */
+@media (max-width: 575.98px) {
+  .verkauf-place-div {
+    margin-bottom: 2rem;
+
+  }
+
+  .verkauf-place-div2 {
+    padding-left: 0 !important;
+  }
+}
+
+/* End > PRESSE PAGE */
+
+
+/* ================================================ STANDTMONOPOLY PAGE ============================================================ */
+.eigenen-Monopoly {
+  background-color: var(--secondary-light-color-25);
+}
+
+.eigenen-Monopoly .stadt-img {
+  margin-bottom: -2%;
+}

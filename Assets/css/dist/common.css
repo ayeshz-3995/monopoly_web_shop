@@ -1,0 +1,400 @@
+:root {
+  /* +++++++++++++++++++++ Global Colors  +++++++++++++++++++++++++++++++++++++ */
+  /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  /* ===   Global Font - Background Colors ====== */
+  --header-background-color: rgb(125, 183, 228);
+  --light-blue-text: rgb(45, 208, 255);
+  --dark-blue-text: rgb(2, 77, 141);
+  --dark-blue-100: #001D39;
+  --dark-blue-overlay1: rgba(3, 62, 119, 0.5);
+  --dark-blue-overlay2: rgba(3, 62, 119, 0.9);
+  --white: rgb(255, 255, 255);
+  --text-ash-color: rgb(162, 162, 162);
+  --border-color-black: rgb(96, 96, 96);
+  --light-red: #C62022;
+  --dark-red: #8A1314;
+  --light-ash-color: rgb(200, 200, 200);
+  --text-color: rgb(96, 96, 96);
+  /* ============== Linear Gredient ======================================== */
+  --red-gradient-bg: linear-gradient(to right, var(--light-red), var(--dark-red));
+  --dark-overlay-bg: linear-gradient(to right, var(--dark-blue-overlay1), var(--dark-blue-overlay2));
+  /* -------------------   End - Global Colors ----------------------------  */
+  /*============= Header ================== */
+  --site-max-width: 1320px;
+  --main-menu-height: 100px;
+  --fixed-menu-height: 50px;
+  /* +++++++++++++++++++++ Global Fonts  +++++++++++++++++++++++++++++++++++++ */
+  /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  /*************************** Heading texts ****************/
+  /* +++++++++++++++++++++ Buttons  +++++++++++++++++++++++++++++++++++++ */
+  /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  /* ================== Red Button ====================*/
+  /* ================= Footer Tag Buttons =========================*/
+  /* ================= Subscribe Buttons =========================*/
+  /************** Form Checkbox ****************/
+}
+@font-face {
+  :root {
+    font-family: popMyFont;
+    src: url("../fonts/Poppins/Poppins-Regular.ttf");
+  }
+}
+:root h1 {
+  font-family: popMyFont;
+}
+:root h2 {
+  font-family: popMyFont;
+}
+:root h3 {
+  font-family: popMyFont;
+}
+:root h4 {
+  font-family: popMyFont;
+}
+:root h5 {
+  font-family: popMyFont;
+}
+:root h6 {
+  font-family: popMyFont;
+}
+:root p {
+  font-family: popMyFont;
+}
+:root a {
+  font-family: popMyFont;
+}
+:root .heading-text h3 {
+  color: var(--light-blue-text);
+  margin-bottom: 0.6em !important;
+  font-family: popMyFont;
+}
+:root .heading-text h3 span {
+  color: var(--dark-blue-text);
+}
+:root .heading-text p {
+  color: var(--text-color);
+}
+:root .red-btn {
+  background-color: var(--light-red);
+  cursor: pointer;
+}
+:root .red-btn :hover {
+  background-color: var(--red-gradient-bg);
+}
+:root .red-btn :hover a {
+  color: var(--white);
+}
+:root .red-btn :hover a i {
+  color: var(--white);
+}
+:root .footer-tags-button {
+  border: 1px solid var(--dark-blue-text);
+  color: var(--dark-blue-text);
+}
+:root .subscribe-btn {
+  color: var(--white);
+  background-color: var(--dark-blue-text);
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 4px 40px;
+}
+:root .subscribe-btn :hover,
+:root .subscribe-btn :focus {
+  color: var(--white) !important;
+  background: var(--light-blue-text) !important;
+}
+:root .check-b label {
+  font-size: 0.7rem;
+  color: var(--dark-blue-text);
+}
+
+/*---------------- Link Buttons ----------------------*/
+.btn-link {
+  font-weight: 700;
+  letter-spacing: -0.01rem;
+  display: inline-block;
+}
+
+.link-color {
+  color: var(--dark-blue-text);
+}
+
+a {
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+a :hover {
+  position: relative;
+}
+a :focus {
+  outline: 0;
+}
+
+a.hover ::before {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  top: 100%;
+  left: 0;
+  pointer-events: none;
+  content: "";
+  transform-origin: 100% 50%;
+  transform: scale3d(0, 1, 1);
+  transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+}
+a.hover :hover ::before {
+  transform-origin: 0% 50%;
+  transform: scale3d(1, 1, 1);
+  transition-timing-function: cubic-bezier(0.4, 1, 0.8, 1);
+}
+
+/*  ++++++++++++++++++++ Media Queries +++++++++++++++++++++++++++++++++++++++ */
+/* ========================== Large Devices ================================= */
+@media (min-width: 992px) {
+  /*---------------------- Font Sizes ---------------- */
+  h1 {
+    font-size: 3rem;
+    line-height: 3.2rem;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    line-height: 2.7rem;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+  }
+
+  h4 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    font-weight: 700;
+  }
+
+  h5 {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    font-weight: 700;
+  }
+
+  h6 {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+
+  /* 
+  a {
+      font-size: 1rem;
+      line-height: 1.2rem;
+  } */
+  /* section padding */
+  .sec-padding-100 {
+    padding: 100px 20px;
+  }
+
+  /******* About - 4 Sections ******/
+  .margin-txt {
+    margin-left: 2em;
+  }
+  .margin-txt a {
+    padding: 0;
+  }
+}
+/* ========================== applies to medium devices (tablets, less than 992px) ================================= */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /*---------------------- Font Sizes ---------------- */
+  h1 {
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    font-weight: 700;
+  }
+
+  h4 {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    font-weight: 700;
+  }
+
+  h5 {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-weight: 700;
+  }
+
+  h6 {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+
+  /*    a {
+      font-size: 1rem;
+      line-height: 1.2rem;
+  } */
+  /* section padding */
+  .sec-padding-100 {
+    padding: 90px 20px;
+  }
+
+  /******* About - 4 Sections ******/
+  .margin-txt {
+    margin-left: 1.2em;
+  }
+  .margin-txt h4 {
+    font-size: 1.3rem;
+  }
+  .margin-txt a {
+    padding: 0;
+  }
+}
+/* ========================== applies to small devices (landscape phones, less than 768px) ================================= */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /*---------------------- Font Sizes ---------------- */
+  h1 {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    font-weight: 700;
+  }
+
+  h4 {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-weight: 700;
+  }
+
+  h5 {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    font-weight: 700;
+  }
+
+  h6 {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+
+  /*   a {
+      font-size: 0.9rem;
+      line-height: 1rem;
+  } */
+  /* section padding */
+  .sec-padding-100 {
+    padding: 80px 20px;
+  }
+
+  /******* About - 4 Sections ******/
+  .margin-txt {
+    margin-left: 1.2em;
+  }
+  .margin-txt a {
+    padding: 0;
+  }
+}
+/* ========================== applies to x-small devices (portrait phones, less than 576px) ================================= */
+@media (max-width: 575.98px) {
+  /*---------------------- Font Sizes ---------------- */
+  h1 {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    font-weight: 700;
+  }
+
+  h4 {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-weight: 700;
+  }
+
+  h5 {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    font-weight: 700;
+  }
+
+  h6 {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+
+  /*   a {
+      font-size: 0.8rem;
+      line-height: 1rem;
+  } */
+  /* section padding */
+  .sec-padding-100 {
+    padding: 50px 20px;
+  }
+
+  /******* About - 4 Sections ******/
+  .margin-txt {
+    margin-left: 1em;
+  }
+  .margin-txt a {
+    padding: 0;
+  }
+}
