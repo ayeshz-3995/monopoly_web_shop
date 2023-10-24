@@ -17,6 +17,7 @@
   --white: #ffffff;
   --transparent-color: rgba(255, 255, 255, 0.0);
   --dark-blue-100: #001D39;
+  --black: #000000;
 
 }
 
@@ -43,7 +44,7 @@ a {
 
 /* add hover effect to the a > span */
 a.link-btn {
-  font-size: 0.9rem;
+  /* font-size: 0.9rem;*/
   letter-spacing: 0.5px;
   font-weight: 600;
   transition: all 0.4s ease-in-out;
@@ -80,6 +81,27 @@ a.link-btn:hover span.btn-hover::before {
   transition-timing-function: cubic-bezier(0.4, 1, 0.8, 1);
 }
 
+/* Buttons > Call to Action Button */
+.cta-btn {
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 2px 15px;
+  width: max-content;
+  border: none;
+  text-align: center;
+}
+
+.cta-btn:hover,
+.cta-btn:focus,
+.cta-btn:active {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+
 /* Buttons > SUBSCRIBE BUTTON */
 .subscribe-btn {
   color: var(--white);
@@ -90,11 +112,8 @@ a.link-btn:hover span.btn-hover::before {
   width: max-content;
   border: none;
   text-align: center;
+  font-weight: 500;
   width: -webkit-fill-available;
-}
-
-.subscribe-btn {
-  color: var(--white);
 }
 
 .subscribe-btn:hover,
@@ -167,7 +186,7 @@ a.link-btn:hover span.btn-hover::before {
 }
 
 
-/* default-gap - Padding in Sections  - Responsive for Mobile, Desktop, Tabs and Medium Devices*/
+/* default-padding  - Padding in Sections  - Responsive for Mobile, Desktop, Tabs and Medium Devices*/
 
 /* Desktop View  */
 @media (min-width: 992px) {
@@ -177,6 +196,11 @@ a.link-btn:hover span.btn-hover::before {
 
   .section-padding {
     padding: 120px 30px 120px 0px;
+  }
+
+  .padding-4 {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
 }
@@ -189,6 +213,11 @@ a.link-btn:hover span.btn-hover::before {
 
   .section-padding {
     padding: 100px 30px 100px 0px;
+  }
+
+  .padding-4 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
@@ -233,21 +262,29 @@ a.link-btn:hover span.btn-hover::before {
   background-color: var(--secondary-light-color);
 }
 
-/* Headings - text color */
+/* Headings - Text Colors - text color */
+/* Dark Blue */
 .color-1 {
   color: var(--primary-color);
 }
 
+/* Light Blue */
 .color-2 {
   color: var(--secondary-color);
 }
 
+/* White */
 .color-3 {
   color: var(--white);
 }
 
+/* Ash */
 .color-4 {
   color: var(--ash-color);
+}
+
+.color-5 {
+  color: var(--black);
 }
 
 /* Page Heading Section  - ALL Page Headings */

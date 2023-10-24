@@ -132,22 +132,22 @@ body {
 
 .page-heading-title {
     font-family: var(--page-heading-font);
-    font-size: clamp(2.75rem, 1.1494rem + 3.3389vw, 4rem);
+    font-size: clamp(2.65rem, 1.14rem + 3.3389vw, 3.8rem);
     font-weight: 600;
     text-transform: uppercase;
 }
 
-.kabel-title_7 {
+.kabel-title_6 {
     font-family: var(--page-heading-font);
-    font-size: clamp(1.125rem, 0.9649rem + 0.3339vw, 1.25rem);
-    font-weight: 400;
+    font-size: clamp(1.0800rem, 0.9649rem + 0.3999vw, 1.2rem);
+    font-weight: 500;
 
 }
 
-.kabel-title_6 {
+.kabel-title_7 {
     font-family: var(--page-heading-font);
-    font-size: clamp(1.25rem, 0.9299rem + 0.6678vw, 1.5rem);
-    font-weight: 500;
+    font-size: clamp(1.0325rem, 0.8625rem + 0.0966vw, 1.1rem);
+    font-weight: 400;
 }
 
 .title_1,
@@ -172,27 +172,27 @@ body {
 
 .title_3 {
     font-size: clamp(1.875rem, 1.0747rem + 1.6694vw, 2.5rem);
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .title_4 {
     font-size: clamp(1.625rem, 1.1448rem + 1.0017vw, 2rem);
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .title_5 {
     font-size: clamp(1.375rem, 0.8948rem + 1.0017vw, 1.75rem);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .title_6 {
     font-size: clamp(1.25rem, 0.9299rem + 0.6678vw, 1.5rem);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .title_7 {
     font-size: clamp(1.125rem, 0.9649rem + 0.3339vw, 1.25rem);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .sub_headings {
@@ -200,6 +200,18 @@ body {
     font-weight: 500;
 }
 
+/* Call to Action Section Headings and sub headings */
+.cta_text {
+    font-family: var(--body-font);
+    font-size: clamp(0.98rem, 0.78rem + 0.0925vw, 0.58rem);
+    font-weight: 600;
+}
+
+.cta_text_sub {
+    font-family: var(--body-font);
+    font-size: clamp(0.78rem, 0.78rem + 0.096vw, 0.98rem);
+    font-weight: 500;
+}
 
 .body_text_larg,
 .body_text,

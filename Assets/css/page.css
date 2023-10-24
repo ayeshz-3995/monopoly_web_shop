@@ -557,8 +557,8 @@
 .faq-accordion .accordion-button {
   color: var(--primary-color);
   font-family: "poppins", sans-serif;
-  font-size: clamp(1.875rem, 1.0747rem + 1.6694vw, 2.5rem);
-  font-weight: 600;
+  font-size: clamp(1.625rem, 1.1448rem + 1.0017vw, 2rem);
+  font-weight: 700;
 }
 
 /* ===================================== Mitmachen Vorschlage  Page ====================================== */
@@ -591,7 +591,12 @@
   border: 6px solid var(--dark-blue-100);
   border-radius: 0;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  background-color: var(--white) !important;
+}
+
+.mit-vorsch .card {
   z-index: -1;
+
 }
 
 .all-card-style .card .card-header {
@@ -601,9 +606,20 @@
   border-radius: 0;
 }
 
+.all-card-style .card-body {
+  background-color: var(--white) !important;
+}
+
 .all-card-style .card .card-title {
   font-weight: 500;
   font-family: "kabel";
+  font-size: clamp(1.25rem, 0.9299rem + 0.6678vw, 1.5rem);
+}
+
+.all-card-style .card .card-title_sub {
+  font-family: "kabel";
+  font-size: clamp(1.0625rem, 0.9825rem + 0.1669vw, 1.125rem);
+  font-weight: 400;
 }
 
 .all-card-style .card .box-shadow-bottom {
@@ -625,7 +641,37 @@
 
 /* End > Mitmachen Vorshlage einreichn Page */
 
+/* Responsive */
+/* Small Devices- Mobile Landscape */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .mitmachen-newsletter .div-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .mitmachen-newsletter .div-1 img {
+    width: 100% !important;
+  }
+
+
+}
+
+/* Xxtra Small Devices */
+@media (max-width: 575.98px) {
+  .mitmachen-newsletter .div-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mitmachen-newsletter .div-1 img {
+    width: 100% !important;
+  }
+
+}
 
 
 /*------ ======================================= MITMACHEN VOTING PAGE ========================================== -- */
@@ -880,6 +926,12 @@
     display: flex;
   }
 
+  .ansprechpartner-bg .div-1,
+  .ansprechpartner-bg .div-2,
+  .ansprechpartner-bg .div-3 {
+    margin-bottom: 2.5rem;
+  }
+
   .ansprechpartner-bg .row .werdenWiederverkäufer-contact .werden-1 {
     width: 100px;
     margin-top: -2%;
@@ -919,6 +971,12 @@
     text-align: center;
     justify-content: center;
     display: flex;
+  }
+
+  .ansprechpartner-bg .div-1,
+  .ansprechpartner-bg .div-2,
+  .ansprechpartner-bg .div-3 {
+    margin-bottom: 2.5rem;
   }
 
   .ansprechpartner-bg .row .werdenWiederverkäufer-contact .werden-1 {
