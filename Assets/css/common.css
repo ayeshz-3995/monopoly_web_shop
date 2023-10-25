@@ -151,6 +151,68 @@ a.link-btn:hover span.btn-hover::before {
   color: var(--white);
 }
 
+
+/* Pop Up Button */
+
+.floating-button {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  z-index: 2000;
+}
+
+.floating-button:hover {
+  width: 200px;
+  border-radius: 45% 0% 0% 45%;
+  right: 0;
+  background-color: var(--secondary-color);
+}
+
+.floating-button:hover img {
+  display: none;
+}
+
+.floating-button .icon:active .popup-hover {
+  display: none;
+}
+
+.floating-button .icon img {
+  width: 50px;
+}
+
+.popup-hover:active .icon {
+  display: none;
+}
+
+.popup-hover img {
+  width: 50px;
+}
+
+.floating-button .popup-hover {
+  display: none;
+}
+
+.floating-button:hover .popup-hover {
+  display: inline-flex;
+  font-size: 15px;
+}
+
+/* End > Buttons */
+
+
+
+
+
+
 /* Mitmachen voting / partner Werden Button outline */
 .button-outline {
   text-decoration: none;
