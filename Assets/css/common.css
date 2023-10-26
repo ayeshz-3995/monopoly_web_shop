@@ -152,64 +152,96 @@ a.link-btn:hover span.btn-hover::before {
 }
 
 
-/* Pop Up Button */
 
-.floating-button {
+/*========================= Floating Button ==========================*/
+.floating-btn {
+  z-index: 1000;
   position: fixed;
   top: 50%;
-  right: 20px;
-  color: #fff;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
+  right: -124px;
+  border-radius: 50% 0 0 50%;
   transition: all 0.3s ease-in-out;
-  z-index: 2000;
 }
 
-.floating-button:hover {
-  width: 200px;
-  border-radius: 45% 0% 0% 45%;
+.floating-btn a {
+  width: 190px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50px 0 0 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.floating-btn p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.floating-btn .icon-box {
+  width: 56px;
+  height: 56px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.floating-btn .icon-box img {
+  width: 100%;
+  height: 100%;
+}
+
+/* hover effect */
+.floating-btn:hover {
   right: 0;
+}
+
+
+.floating-btn:hover a {
   background-color: var(--secondary-color);
 }
 
-.floating-button:hover img {
-  display: none;
+.floating-btn:hover .icon-box {
+  padding: 5px;
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
 }
 
-.floating-button .icon:active .popup-hover {
-  display: none;
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+
+  .floating-btn {
+    right: -130px;
+  }
+
+  .floating-btn a {
+    width: 170px;
+  }
+
+  .floating-btn .icon-box {
+    width: 40px;
+    height: 40px;
+  }
+
+  .floating-btn p {
+    font-size: 0.7rem;
+  }
+
+  .floating-btn:hover {
+    right: -20px;
+  }
+
+  .floating-btn:hover .icon-box {
+    padding: 2px;
+  }
+
 }
 
-.floating-button .icon img {
-  width: 50px;
-}
-
-.popup-hover:active .icon {
-  display: none;
-}
-
-.popup-hover img {
-  width: 50px;
-}
-
-.floating-button .popup-hover {
-  display: none;
-}
-
-.floating-button:hover .popup-hover {
-  display: inline-flex;
-  font-size: 15px;
-}
-
-/* End > Buttons */
-
-
-
+/*** End > Floating Button ****/
 
 
 
