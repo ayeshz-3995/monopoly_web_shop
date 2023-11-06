@@ -175,7 +175,7 @@
     <!---==============================   Floating fixed Button =====================================---->
     <div class="floating-btn">
         <a href="#">
-            <div class="icon-box"><img src="../Assets/img/header/hands.png" alt="hands"></div>
+            <div class="icon-box"><img src="../Assets/img/floating-button/handshake_icon.svg" alt="hands"></div>
             <p>Partner werden</p>
              
         </a>
@@ -212,7 +212,7 @@
 
     <!-- ==================================================== MITMATCHEN  > About Section ========================================= -->
     <section>
-        <div class="container section-padding">
+        <div class="container default-padding">
             <div class="row m-0">
                 <div class="col-md-6">
                     <img src="../Assets/img/mitmachen-page/MONOPOLY-Wuerzburg-verpackt.png" class="w-100" alt="...">
@@ -244,7 +244,7 @@
 
     <!-- ======================================================== Newsletter Section ================================================= -->
     <section class="mitmachen-newsletter">
-        <div class="container">
+        <div class="container p-0">
             <div class="row m-0">
                 <div class="col-md-3">
                     <img src="../Assets/img/Mitmachen-Vorschläge-einreichen-Page/mit-voting-1.png"
@@ -257,7 +257,7 @@
                         $Stadtname-Edition und
                         gewinne mit etwas Glück eines von 3 Exemplaren!</p>
                 </div>
-                <div class="col-md-6 pe-5">
+                <div class="col-md-6">
                     <form id="contactForm" action="#" method="post">
                         <div class="row">
                             <div class="col-md-12 mb-3">
@@ -280,7 +280,7 @@
                                 <input type="email" class="form-control body_text color-4" id="email"
                                     placeholder="Deine Mail-Adresse" name="email" required>
                             </div>
-                            <div class="col-md-12 mb-3 form-check">
+                            <div class="col-md-12 mb-3">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     <span class="text-uppercase color-1"> <strong> Newsletter Abonnieren</strong>
@@ -290,7 +290,7 @@
                                         Monopoly $Stadtname.</span>
                                 </label>
                             </div>
-                            <div class="col-md-12 mb-3 form-check">
+                            <div class="col-md-12 mb-3">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                 <label class="form-check-label body_text_extra_small color-4" for="flexCheckDefault">
                                     Ich habe die Datenschutzerklärung gelesen und akzeptiere die Bedingungen.
@@ -309,36 +309,39 @@
     <!-- End > Mitmachen Newsletter Section -->
     <section>
         <!-- Modal -->
-        <div class="modal fade modal-dialog" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="container-fluid">
-                            <div class="row m-0">
-                                <div class="col-6 col-md-6 d-grid align-items-center">
-                                    <h4 class="title_4 color-1"> Vielen Dank für
-                                        Deine Stimme!</h4>
-                                    <p class="body_text color-4">Hast du schon Dein persönliches Exemplar vorbestellt?
-                                    </p>
-                                    <a href="#" class="red-btn body_text color-3"><i
-                                            class="fas fa-cart-shopping me-2"></i><span>Vorbestellung</span></a>
-                                </div>
-                                <div class="col-5 col-md-5 d-flex align-items-center">
-                                    <img class=" w-100"
-                                        src="../Assets/img/mitmachen-page/MONOPOLY-Wuerzburg-verpackt.png" alt="">
-                                </div>
-                                <div class="col-md-1 col-1">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
+        <section>
+            <div class="modal fade modal-lg" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="container-fluid p-0">
+                                <div class="row m-0">
+                                    <div class="col-6 col-md-6 d-grid align-items-center">
+                                        <h4 class="title_4 color-1"> Vielen Dank für <br>
+                                            Deine Stimme!</h4>
+                                        <p class="body_text color-4">Hast du schon Dein persönliches Exemplar
+                                            vorbestellt?
+                                        </p>
+                                        <a href="#" class="red-btn body_text color-3 w-75 text-center"><i
+                                                class="fas fa-cart-shopping me-2"></i><span>Vorbestellung</span></a>
+                                    </div>
+                                    <div class="col-5 col-md-5 d-flex align-items-center">
+                                        <img class=" w-100"
+                                            src="../Assets/img/mitmachen-page/MONOPOLY-Wuerzburg-verpackt.png" alt="">
+                                    </div>
+                                    <div class="col-md-1 col-1">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- End Modal -->
     </section>
 
@@ -347,128 +350,134 @@
 
     <!-- ======================================================= Mitmachen Shop Section ============================================== -->
     <section>
-        <div class="container section-padding pb-0 mit-vorsch">
+        <div class="container default-padding pb-0 mit-vorsch">
             <div class="row mb-5">
                 <h3 class="title_4 color-1 text-center"> <span>Diese Straßen wurden schon von Euch
                         vorgeschlagen:</span>
                 </h3>
             </div>
             <div class="row">
-                <div class="box all-card-style col-md-3 p-3 pt-0">
-                    <div class="card text-center  mb-4">
-                        <div class="card-header">
+                <div class="d-flex mit-d-flex">
+                    <div class="box all-card-style col-md-3 p-3 pt-0">
+                        <div class="card text-center  mb-4">
+                            <div class="card-header">
 
+                            </div>
+                            <div class="card-body">
+                                <h6 class="kabel-title_6 mt-4 mb-4"> <span>HAUPTSTRASSE</span> </h6>
+                                <h6 class="kabel-title_7 mb-4">Max Mustermann <br>
+                                    GmbH & Co. KG</h6>
+                                <img src="../Assets/img/partner-warden-page/weissen-kirchen.png" class="w-75" alt="">
+                            </div>
+                            <div class="box-shadow-bottom"></div>
                         </div>
-                        <div class="card-body">
-                            <h6 class="kabel-title_6 mt-4 mb-4"> <span>HAUPTSTRASSE</span> </h6>
-                            <h6 class="kabel-title_7 mb-4">Max Mustermann <br>
-                                GmbH & Co. KG</h6>
-                            <img src="../Assets/img/partner-warden-page/weissen-kirchen.png" class="w-75" alt="">
+                    </div>
+                    <div class="box all-card-style col-md-3 p-3 pt-0">
+                        <div class="card text-center  mb-4">
+                            <div class="card-header">
+
+                            </div>
+                            <div class="card-body">
+                                <h6 class="kabel-title_6 mt-4 mb-4"> <span>HAUPTSTRASSE</span> </h6>
+                                <h6 class="kabel-title_7 mb-4">Max Mustermann <br>
+                                    GmbH & Co. KG</h6>
+                                <img src="../Assets/img/partner-warden-page/weissen-kirchen.png" class="w-75" alt="">
+                            </div>
+                            <div class="box-shadow-bottom"></div>
                         </div>
-                        <div class="box-shadow-bottom"></div>
+                    </div>
+                    <div class="box all-card-style col-md-3 p-3 pt-0">
+                        <div class="card text-center  mb-4">
+                            <div class="card-header">
+
+                            </div>
+                            <div class="card-body">
+                                <h6 class="kabel-title_6 mt-4 mb-4"> <span>HAUPTSTRASSE</span> </h6>
+                                <h6 class="kabel-title_7 mb-4">Max Mustermann <br>
+                                    GmbH & Co. KG</h6>
+                                <img src="../Assets/img/partner-warden-page/weissen-kirchen.png" class="w-75" alt="">
+                            </div>
+                            <div class="box-shadow-bottom"></div>
+                        </div>
+                    </div>
+                    <div class="box all-card-style col-md-3 p-3 pt-0">
+                        <div class="card text-center  mb-4">
+                            <div class="card-header">
+
+                            </div>
+                            <div class="card-body">
+                                <h6 class="kabel-title_6 mt-4 mb-4"> <span>HAUPTSTRASSE</span> </h6>
+                                <h6 class="kabel-title_7 mb-4">Max Mustermann <br>
+                                    GmbH & Co. KG</h6>
+                                <img src="../Assets/img/partner-warden-page/weissen-kirchen.png" class="w-75" alt="">
+                            </div>
+                            <div class="box-shadow-bottom"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="box all-card-style col-md-3 p-3 pt-0">
-                    <div class="card text-center  mb-4">
-                        <div class="card-header">
 
-                        </div>
-                        <div class="card-body">
-                            <h6 class="kabel-title_6 mt-4 mb-4"> <span>HAUPTSTRASSE</span> </h6>
-                            <h6 class="kabel-title_7 mb-4">Max Mustermann <br>
-                                GmbH & Co. KG</h6>
-                            <img src="../Assets/img/partner-warden-page/weissen-kirchen.png" class="w-75" alt="">
-                        </div>
-                        <div class="box-shadow-bottom"></div>
-                    </div>
-                </div>
-                <div class="box all-card-style col-md-3 p-3 pt-0">
-                    <div class="card text-center  mb-4">
-                        <div class="card-header">
-
-                        </div>
-                        <div class="card-body">
-                            <h6 class="kabel-title_6 mt-4 mb-4"> <span>HAUPTSTRASSE</span> </h6>
-                            <h6 class="kabel-title_7 mb-4">Max Mustermann <br>
-                                GmbH & Co. KG</h6>
-                            <img src="../Assets/img/partner-warden-page/weissen-kirchen.png" class="w-75" alt="">
-                        </div>
-                        <div class="box-shadow-bottom"></div>
-                    </div>
-                </div>
-                <div class="box all-card-style col-md-3 p-3 pt-0">
-                    <div class="card text-center  mb-4">
-                        <div class="card-header">
-
-                        </div>
-                        <div class="card-body">
-                            <h6 class="kabel-title_6 mt-4 mb-4"> <span>HAUPTSTRASSE</span> </h6>
-                            <h6 class="kabel-title_7 mb-4">Max Mustermann <br>
-                                GmbH & Co. KG</h6>
-                            <img src="../Assets/img/partner-warden-page/weissen-kirchen.png" class="w-75" alt="">
-                        </div>
-                        <div class="box-shadow-bottom"></div>
-                    </div>
-                </div>
             </div>
 
             <div id="additional-boxes" class="shop-hidden row mt-4">
-                <div class="box all-card-style col-md-3 p-3 pt-0">
-                    <div class="card text-center  mb-4">
-                        <div class="card-header">
+                <div class="d-flex">
+                    <div class="box all-card-style col-md-3 p-3 pt-0">
+                        <div class="card text-center  mb-4">
+                            <div class="card-header">
 
+                            </div>
+                            <div class="card-body">
+                                <h6 class="kabel-title_6 mt-4 mb-4"> <span>HAUPTSTRASSE</span> </h6>
+                                <h6 class="kabel-title_7 mb-4">Max Mustermann <br>
+                                    GmbH & Co. KG</h6>
+                                <img src="../Assets/img/partner-warden-page/weissen-kirchen.png" class="w-75" alt="">
+                            </div>
+                            <div class="box-shadow-bottom"></div>
                         </div>
-                        <div class="card-body">
-                            <h6 class="kabel-title_6 mt-4 mb-4"> <span>HAUPTSTRASSE</span> </h6>
-                            <h6 class="kabel-title_7 mb-4">Max Mustermann <br>
-                                GmbH & Co. KG</h6>
-                            <img src="../Assets/img/partner-warden-page/weissen-kirchen.png" class="w-75" alt="">
+                    </div>
+                    <div class="box all-card-style col-md-3 p-3 pt-0">
+                        <div class="card text-center  mb-4">
+                            <div class="card-header">
+
+                            </div>
+                            <div class="card-body">
+                                <h6 class="kabel-title_6 mt-4 mb-4"> <span>HAUPTSTRASSE</span> </h6>
+                                <h6 class="kabel-title_7 mb-4">Max Mustermann <br>
+                                    GmbH & Co. KG</h6>
+                                <img src="../Assets/img/partner-warden-page/weissen-kirchen.png" class="w-75" alt="">
+                            </div>
+                            <div class="box-shadow-bottom"></div>
                         </div>
-                        <div class="box-shadow-bottom"></div>
+                    </div>
+                    <div class="box all-card-style col-md-3 p-3 pt-0">
+                        <div class="card text-center  mb-4">
+                            <div class="card-header">
+
+                            </div>
+                            <div class="card-body">
+                                <h6 class="kabel-title_6 mt-4 mb-4"> <span>HAUPTSTRASSE</span> </h6>
+                                <h6 class="kabel-title_7 mb-4">Max Mustermann <br>
+                                    GmbH & Co. KG</h6>
+                                <img src="../Assets/img/partner-warden-page/weissen-kirchen.png" class="w-75" alt="">
+                            </div>
+                            <div class="box-shadow-bottom"></div>
+                        </div>
+                    </div>
+                    <div class="box all-card-style col-md-3 p-3 pt-0">
+                        <div class="card text-center  mb-4">
+                            <div class="card-header">
+
+                            </div>
+                            <div class="card-body">
+                                <h6 class="kabel-title_6 mt-4 mb-4"> <span>HAUPTSTRASSE</span> </h6>
+                                <h6 class="kabel-title_7 mb-4">Max Mustermann <br>
+                                    GmbH & Co. KG</h6>
+                                <img src="../Assets/img/partner-warden-page/weissen-kirchen.png" class="w-75" alt="">
+                            </div>
+                            <div class="box-shadow-bottom"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="box all-card-style col-md-3 p-3 pt-0">
-                    <div class="card text-center  mb-4">
-                        <div class="card-header">
 
-                        </div>
-                        <div class="card-body">
-                            <h6 class="kabel-title_6 mt-4 mb-4"> <span>HAUPTSTRASSE</span> </h6>
-                            <h6 class="kabel-title_7 mb-4">Max Mustermann <br>
-                                GmbH & Co. KG</h6>
-                            <img src="../Assets/img/partner-warden-page/weissen-kirchen.png" class="w-75" alt="">
-                        </div>
-                        <div class="box-shadow-bottom"></div>
-                    </div>
-                </div>
-                <div class="box all-card-style col-md-3 p-3 pt-0">
-                    <div class="card text-center  mb-4">
-                        <div class="card-header">
-
-                        </div>
-                        <div class="card-body">
-                            <h6 class="kabel-title_6 mt-4 mb-4"> <span>HAUPTSTRASSE</span> </h6>
-                            <h6 class="kabel-title_7 mb-4">Max Mustermann <br>
-                                GmbH & Co. KG</h6>
-                            <img src="../Assets/img/partner-warden-page/weissen-kirchen.png" class="w-75" alt="">
-                        </div>
-                        <div class="box-shadow-bottom"></div>
-                    </div>
-                </div>
-                <div class="box all-card-style col-md-3 p-3 pt-0">
-                    <div class="card text-center  mb-4">
-                        <div class="card-header">
-
-                        </div>
-                        <div class="card-body">
-                            <h6 class="kabel-title_6 mt-4 mb-4"> <span>HAUPTSTRASSE</span> </h6>
-                            <h6 class="kabel-title_7 mb-4">Max Mustermann <br>
-                                GmbH & Co. KG</h6>
-                            <img src="../Assets/img/partner-warden-page/weissen-kirchen.png" class="w-75" alt="">
-                        </div>
-                        <div class="box-shadow-bottom"></div>
-                    </div>
-                </div>
             </div>
         </div>
         <!---------- ==================== Button ================ ---------->
@@ -509,29 +518,29 @@
 
                 <div class="footer-menu" id="f-menu-1">
                     <ul>
-                        <li id="m-list-1"><a href="../resources/faq.html" target="_blank">FAQ</a></li>
-                        <li id="m-list-2"><a href="../resources/Presse.html" target="_blank">Presse</a></li>
-                        <li id="m-list-3"><a href="../resources/Verkaufsstellen.html" target="_blank">Verkaufstellen</a>
+                        <li id="m-list-1"><a href="../resources/faq.html">FAQ</a></li>
+                        <li id="m-list-2"><a href="../resources/Presse.html">Presse</a></li>
+                        <li id="m-list-3"><a href="../resources/Verkaufsstellen.html">Verkaufstellen</a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="footer-menu" id="f-menu-2">
                     <ul>
-                        <li id="m-list-4"><a href="../resources/Wiederverkäufer-werden.html"
-                                target="_blank">Wiederverkäufer werden</a></li>
-                        <li id="m-list-5"><a href="../resources/Partner-werden.html" target="_blank">Partner</a></li>
-                        <li id="m-list-6"><a href="../resources/Stadtmonopoly.html" target="_blank">Ihre Stadt - Ihr
+                        <li id="m-list-4"><a href="../resources/Wiederverkäufer-werden.html">Wiederverkäufer werden</a>
+                        </li>
+                        <li id="m-list-5"><a href="../resources/Partner-werden.html">Partner</a></li>
+                        <li id="m-list-6"><a href="../resources/Stadtmonopoly.html">Ihre Stadt - Ihr
                                 Monopoly</a></li>
                     </ul>
                 </div>
 
                 <div id="f-menu-3">
                     <ul>
-                        <li><a href="#" target="_blank">Kontakt</a></li>
-                        <li><a href="#" target="_blank">AGB</a></li>
-                        <li><a href="#" target="_blank">Datenschutz</a></li>
-                        <li><a href="#" target="_blank">Impressum</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#">AGB</a></li>
+                        <li><a href="#">Datenschutz</a></li>
+                        <li><a href="#">Impressum</a></li>
                     </ul>
                 </div>
 

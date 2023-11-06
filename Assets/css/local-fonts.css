@@ -128,11 +128,12 @@
 body {
     font-family: var(--body-font);
     color: var(--ash-color);
+
 }
 
 .page-heading-title {
     font-family: var(--page-heading-font);
-    font-size: clamp(2.65rem, 1.14rem + 3.3389vw, 3.8rem);
+    font-size: clamp(2.3rem, 1.14rem + 3.33vw, 3.3rem);
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -197,7 +198,7 @@ body {
 
 .sub_headings {
     font-size: clamp(1.0625rem, 0.9825rem + 0.1669vw, 1.125rem);
-    font-weight: 500;
+    font-weight: 700;
 }
 
 /* Call to Action Section Headings and sub headings */
@@ -218,6 +219,7 @@ body {
 .body_text_small,
 .body_text_extra_small {
     font-family: var(--body-font);
+    line-height: 1.8em;
 }
 
 .body_text_larg {
@@ -234,5 +236,5 @@ body {
 }
 
 .body_text_extra_small {
-    font-size: 0.68rem;
+    font-size: 0.65rem;
 }

@@ -8,7 +8,7 @@
   height: 88vh;
   width: 100%;
   background-color: red;
-  display: flex;
+  /*display: flex;*/
   align-items: center;
   justify-content: center;
 }
@@ -73,6 +73,10 @@
   color: #fff;
 }
 
+.video-hero a.link-btn:hover i {
+  color: var(--secondary-color);
+}
+
 
 
 .wrapper .right {
@@ -80,14 +84,7 @@
   height: 100%;
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
-}
-
-.wrapper .right img {
-  width: 700px;
-  height: auto;
-  margin-bottom: -50px;
-  margin-right: 0;
+  /*align-items: flex-end; */
 }
 
 
@@ -104,16 +101,16 @@
 
 
 /* mobile css for video hero */
-@media screen and (max-width: 1280px) {
+@media screen and (min-width: 1280px) {
   .wrapper .right img {
-    width: 600px;
+    width: 700px;
     height: auto;
     margin-right: 0;
   }
 
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 991px) {
   .video-hero {
     height: 100vh;
   }
@@ -135,12 +132,6 @@
   }
 
 
-  .wrapper .right img {
-    width: 80%;
-    margin-top: -25%;
-    /* margin-bottom: -25px; */
-  }
-
   .video-hero .wurfel-img {
     display: none;
   }
@@ -149,22 +140,15 @@
 
 
 
-@media screen and (max-width: 600px) {
-  .video-hero .wrapper {
-    padding: 120px 25px 0 25px;
-  }
-
-}
-
 
 /* default-padding  - Padding in Sections  - Responsive for Mobile, Desktop, Tabs and Medium Devices*/
 
 /* Desktop View  */
 @media (min-width: 992px) {
   .wrapper .right img {
-    width: 400px;
+    width: 700px;
     margin: 0;
-    margin-bottom: -7%;
+    margin-bottom: -11%;
   }
 
 }
@@ -172,7 +156,7 @@
 /* Medium Devices -Tabs  */
 @media (min-width: 768px) and (max-width: 991.98px) {
   .wrapper .right img {
-    width: 400px;
+    width: 700px;
     margin: 0;
     margin-bottom: -7%;
   }
@@ -185,6 +169,12 @@
     margin: 0;
     margin-bottom: -7%;
   }
+
+  .video-hero {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /* Xxtra Small Devices */
@@ -192,7 +182,17 @@
   .wrapper .right img {
     width: 400px;
     margin: 0;
-    margin-top: -5%;
+    margin-top: 20%;
+  }
+
+  .video-hero {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .video-hero .wrapper {
+    padding: 15px 25px;
   }
 }
 
@@ -266,7 +266,6 @@
   background-size: cover;
   background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8)), url(../../Assets/img/home-page/about/home-about-light-background-facts.png);
   height: auto;
-
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -275,12 +274,29 @@
   width: 22%;
 }
 
-.facts .info-box .info-icon {
+.facts .info-box-dark {
+  padding: 25px;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background-size: cover;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8)), url(../../Assets/img/home-page/about/home-about-dark-background-facts.png);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 25px;
+  width: 22%;
+}
+
+.facts .info-box .info-icon,
+.facts .info-box-dark .info-icon {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-
   margin-top: -80px;
   padding-bottom: 32px;
 }
@@ -318,15 +334,21 @@
   /* width: 70%; */
 }
 
+.fatcs .info-box-dark h3 {
+  color: var(--primary-color);
+  font-weight: 700;
+}
 
-.facts .info-box a {
+.facts .info-box a,
+.fatcs .info-box-dark a {
   padding: 0;
   padding-bottom: 5px;
   margin: 0;
 
 }
 
-.facts .info-box a span {
+.facts .info-box a span,
+.facts .info-box-dark a span {
   color: var(--primary-color);
   font-weight: 700;
   display: inline-flex;
@@ -336,8 +358,9 @@
 
 
 /* hover effects */
-.info-box:hover .bg-icon {
-  transform: scale(1.2);
+.info-box:hover .bg-icon,
+.info-box-dark:hover .bg-icon {
+  transform: scale(1.3);
   transition: all 0.4s ease-in-out;
 }
 
@@ -353,7 +376,7 @@
   background-image: url(../../Assets/img/home-page/about/logo-3-dark.png);
 }
 
-.info-box:hover #info-icon-4 {
+.info-box-dark:hover #info-icon-4 {
   background-image: url(../../Assets/img/home-page/about/logo-4-dark.png);
 }
 
@@ -362,7 +385,13 @@
   color: var(--primary-color);
 }
 
-.info-box:hover a.link-btn span.btn-hover::before {
+.info-box-dark:hover h3 {
+  transition: all 0.4s ease-in-out;
+  color: var(--dark-blue-100);
+}
+
+.info-box:hover a.link-btn span.btn-hover::before,
+.info-box-dark:hover a.link-btn span.btn-hover::before {
   transform-origin: 0% 50%;
   transform: scale3d(1, 1, 1);
   transition-timing-function: cubic-bezier(0.4, 1, 0.8, 1);
@@ -377,7 +406,8 @@
     padding: 100px 45px;
   }
 
-  .facts .info-box {
+  .facts .info-box,
+  .facts .info-box-dark {
     width: 47%;
     margin-bottom: 80px;
   }
@@ -392,7 +422,9 @@
 }
 
 @media screen and (max-width: 590px) {
-  .facts .info-box {
+
+  .facts .info-box,
+  .facts .info-box-dark {
     width: 100%;
   }
 
@@ -431,6 +463,7 @@
 .actuelles-section .date-and-text p,
 .actuelles-section .date-and-text a {
   color: var(--ash-color);
+  margin-bottom: 1rem;
 }
 
 .actuelles-section .bg-white-color h6 {
@@ -586,6 +619,9 @@
   background-color: var(--secondary-light-color-25);
 }
 
+.die-edi-2 .red-btn {
+  width: fit-content;
+}
 
 /*================================== FAQ - Page ========================================================= */
 .faq-accordion .accordion-button:not(.collapsed) {
@@ -682,6 +718,17 @@
 /* End > Mitmachen Vorshlage einreichn Page */
 
 /* Responsive */
+
+/* Medium Devices -Tabs  */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  .all-card-style .card,
+  .all-card-style .w-75 {
+    width: 100% !important;
+  }
+
+}
+
 /* Small Devices- Mobile Landscape */
 @media (min-width: 576px) and (max-width: 767.98px) {
   .mitmachen-newsletter .div-1 {
@@ -694,6 +741,16 @@
   .mitmachen-newsletter .div-1 img {
     width: 100% !important;
   }
+
+  .all-card-style .card,
+  .all-card-style .w-75 {
+    width: 100% !important;
+  }
+
+  .mit-vorsch .mit-d-flex {
+    flex-direction: column;
+  }
+
 
 
 }
@@ -710,6 +767,16 @@
   .mitmachen-newsletter .div-1 img {
     width: 100% !important;
   }
+
+  .all-card-style .card,
+  .all-card-style .w-75 {
+    width: 100% !important;
+  }
+
+  .mit-vorsch .mit-d-flex {
+    flex-direction: column;
+  }
+
 
 }
 
@@ -744,11 +811,45 @@
   color: var(--white);
 }
 
+/* Responsive */
+/* Desktop View  */
+@media (min-width: 992px) {
+  .mitmatchen-votinng-heading .container {
+    padding: 0;
+  }
+}
+
+/* Medium Devices -Tabs  */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .mitmatchen-votinng-heading .container {
+    padding: 0.5rem;
+  }
+}
+
+/* Small Devices- Mobile Landscape */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+  .mitmatchen-votinng-heading .container {
+    padding: 2rem;
+  }
+
+}
+
+/* Xxtra Small Devices */
+@media (max-width: 575.98px) {
+
+  .mitmatchen-votinng-heading .container {
+    padding: 2rem;
+  }
+
+}
+
+
 /*-- ==============================================  PARTNER WERDEN PAGE =============================================== -- */
 /*-- Partner Werden > Video Section -- */
 #standtmonopoly-video {
   position: relative;
-  padding: 100px;
+  padding: 80px;
 }
 
 #standtmonopoly-video .video-container {
@@ -893,7 +994,7 @@
 
   .werdenWiederverkäufer-contact .presse-1 {
     width: 150px;
-    margin-top: 0.3%;
+    margin-top: -0.7%;
   }
 
   .werdenWiederverkäufer-contact .werden-2 {
@@ -1021,7 +1122,7 @@
 
   .ansprechpartner-bg .row .werdenWiederverkäufer-contact .werden-1 {
     width: 100px;
-    margin-top: -3%;
+    margin-top: -5%;
   }
 
   .ansprechpartner-bg .row .werdenWiederverkäufer-contact .werden-2 {
@@ -1030,14 +1131,14 @@
 
   .ansprechpartner-bg .row .werdenWiederverkäufer-contact .werden-3 {
     width: 110px;
-    margin-left: -32%;
-    margin-top: -1%;
+    margin-left: -35%;
+    margin-top: -10%;
     z-index: -1;
   }
 
   .ansprechpartner-bg .row .werdenWiederverkäufer-contact .presse-1 {
     width: 100px;
-    margin-top: -5.3%;
+    margin-top: -8.3%;
   }
 
   .ansprechpartner-bg .row .werdenWiederverkäufer-contact .presse-2 {
@@ -1046,8 +1147,8 @@
 
   .ansprechpartner-bg .row .werdenWiederverkäufer-contact .presse-3 {
     width: 110px;
-    margin-left: -32%;
-    margin-top: -1%;
+    margin-left: -35%;
+    margin-top: -8%;
     z-index: -1;
   }
 }
@@ -1131,4 +1232,30 @@
 
 .eigenen-Monopoly .stadt-img {
   margin-bottom: -2%;
+}
+
+.mg {
+  margin-top: var(--main-menu-height);
+}
+
+/* -- End > STANDTMONOPOLY PAGE -- */
+
+
+/*============================================ VERKAUFSTELLEN PAGE  =================================================================== */
+
+/* -- PRESS DOWNLOAD -- */
+
+/*=== RESPONSIVE ===== */
+/* Small Devices- Mobile Landscape */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .ver-d-flex {
+    flex-direction: column;
+  }
+}
+
+/* Xxtra Small Devices */
+@media (max-width: 575.98px) {
+  .ver-d-flex {
+    flex-direction: column;
+  }
 }
