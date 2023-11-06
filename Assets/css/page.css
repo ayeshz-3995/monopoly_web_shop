@@ -291,6 +291,7 @@
   width: 22%;
 }
 
+
 .facts .info-box .info-icon,
 .facts .info-box-dark .info-icon {
   width: 100%;
@@ -340,10 +341,10 @@
 }
 
 .facts .info-box a,
-.fatcs .info-box-dark a {
+.facts .info-box-dark a {
   padding: 0;
   padding-bottom: 5px;
-  margin: 0;
+  margin: 0 !important;
 
 }
 
@@ -643,6 +644,10 @@
   background-size: contain;
   background-repeat: repeat;
   padding: 50px 0px;
+}
+
+.mitmachen-newsletter label {
+  display: inline !important;
 }
 
 .mitmachen-newsletter .form-select,
